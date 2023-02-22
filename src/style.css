@@ -1,0 +1,14 @@
+.encabezado {
+  background-color: antiquewhite;
+  height: 50%;
+  width: 50%;
+  position: sticky;
+}
+
+.mystyle {
+  width: 100%;
+  background-image: url("../imagen/fondo.png");
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+}
