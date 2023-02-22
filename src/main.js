@@ -1,15 +1,25 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
-//Enviar solicitud al servideor para obtener archivo json. y como argumento tendra el nombre del archivo
 
-function mostrarData(pokemon) {
-  const placeholder = document.getElementById("data");
+const cortarData = dataPokemon.pokemon.slice(0,10);
 
-  pokemon.forEach((diccionario) => {
+function mostrarData(pokemones) {
+  const data = document.getElementById("data");
+
+  pokemones.forEach((pokemon) => {
+    const card =document.createElement("div");
+    card.innerHTML= pokemon["name"];
+    const numbers=document.createElement("number");
+    numbers.innerHTML= pokemon["num"];
+    const categoria=document.createElement("type");
+    categoria.innerHTML= pokemon["type"];
     const image = document.createElement("img"); //<img>
-    image.src = diccionario["img"];
-    placeholder.appendChild(image); // <div id="data-output"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> </div>
+    image.src = pokemon["img"];
+    card.appendChild(categoria);
+    card.appendChild(numbers);
+    card.appendChild(image); 
+    data.appendChild(card);
   });
 }
-mostrarData(dataPokemon.pokemon);
+mostrarData(cortarData);
 
