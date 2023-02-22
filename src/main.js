@@ -2,8 +2,6 @@
 import dataPokemon from "./data/pokemon/pokemon.js";
 //Enviar solicitud al servideor para obtener archivo json. y como argumento tendra el nombre del archivo
 
-//const container = document.getElementById('container');
-//const poke_number = 251
 function mostrarData(pokemon) {
   const placeholder = document.getElementById("data");
 
@@ -14,3 +12,4 @@ function mostrarData(pokemon) {
   });
 }
 mostrarData(dataPokemon.pokemon);
+
