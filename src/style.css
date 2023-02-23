@@ -63,7 +63,7 @@ header{
 	flex-wrap: wrap;
 	gap: .5rem;
 }
-.btn-hedear{
+.btn-header{
 	background-color: var(--clr-gray);
 	padding: .5rem;
 	border-radius: 100vmax;
@@ -74,10 +74,11 @@ header{
 	transition: .2s;
 }
 
-.btn-hedear:hover{
+.btn-header:hover{
 transform: scale(1.1);
 box-shadow: 0 0 2rem rgba(black, 0 ,0,.25);
 }
+
 main{
 	padding: 2rem;
 	max-width: 1000px;
@@ -105,12 +106,6 @@ main{
 	background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
 	background: linear-gradient(to right, #DA70D6, #FFFF00);
 
-   
-
-    
-
-   
-
     }
 }
 div {
@@ -136,7 +131,7 @@ numbers{
 }
 
 img {
-    float: left;
+    float:initial;
     padding-inline: 1rem;
 	display: flex;
 	justify-content: center;
@@ -145,12 +140,6 @@ img {
     content: "";
 }
 
-
-type{
-    justify-content: center;
-    align-items:center;
-
-}
 
 name{
 	display: flex;
@@ -163,6 +152,7 @@ name{
 
 
 type{
+    align-items:center;
     border-radius: 100vmax;
     background-color: red;
 	display: flex;

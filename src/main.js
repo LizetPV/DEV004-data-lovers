@@ -7,17 +7,19 @@ function mostrarData(pokemones) {
   const data = document.getElementById("data");
 
   pokemones.forEach((pokemon) => {
-    const card =document.createElement("div");
-    card.innerHTML= pokemon["name"];
-    const numbers=document.createElement("number");
+    const card = document.createElement("div");
+    const name = document.createElement("name");
+    name.innerHTML= pokemon["name"];
+    const numbers = document.createElement("number");
     numbers.innerHTML= pokemon["num"];
-    const categoria=document.createElement("type");
+    const categoria = document.createElement("type");
     categoria.innerHTML= pokemon["type"];
     const image = document.createElement("img"); //<img>
     image.src = pokemon["img"];
+    card.appendChild(image); 
+    card.appendChild(name);
     card.appendChild(categoria);
     card.appendChild(numbers);
-    card.appendChild(image); 
     data.appendChild(card);
   });
 }
