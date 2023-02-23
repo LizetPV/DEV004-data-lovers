@@ -1,9 +1,7 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
-console.log(dataPokemon.pokemon);
 const divTarjeta = document.getElementById("data");
-console.log(divTarjeta)
 
 const mostrarData = (pokemones) => {
   divTarjeta.innerHTML = "";
@@ -27,4 +25,3 @@ const mostrarData = (pokemones) => {
 }
 
 mostrarData(dataPokemon.pokemon);
-console.log(mostrarData(dataPokemon.pokemon));

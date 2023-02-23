@@ -140,6 +140,15 @@ numbers {
     color: var(--clr-gray);
 }
 
+numb {
+    float: initial;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 10rem;
+}
+
 img { /* imagen logo */
     float: initial;
     padding-inline: 1rem;
@@ -161,7 +170,6 @@ name {
 type {
     align-items: center;
     border-radius: 100vmax;
-    background-color: red;
     display: flex;
     gap: .5rem;
     font-size: .75rem;
@@ -190,7 +198,7 @@ type {
 
 .normal {
     background-color: var(--Type-normal);
-    color: var(--clr-black)
+    color: var(--clr-black);
 }
 
 .fire {
