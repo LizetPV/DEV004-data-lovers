@@ -102,26 +102,18 @@ header {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
+*/
 
- 
-@media screen and (min-width:470px) {
-    .pokemon-todos {
-        grid-template-columns: 1fr 1fr;
-    }
     #data {
         display: flex;
-        justify-content: center;
         justify-content: space-around;
-        justify-content: space-between;
         align-items: center;
-        grid-template-columns: repeat(4, 2fr);
-        grid-gap: 15px;
-        grid-auto-rows: 100px;
         background: #FFE4C4;
         background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
         background: linear-gradient(to right, #DA70D6, #FFFF00);
+        flex-wrap: wrap;
+        width: 100%;
     }
-}*/
 
 div {
     border-radius: 1rem;
@@ -133,6 +125,7 @@ div {
     overflow: hidden;
     width: max-content;
     height: max-content;
+    margin: 10px;
 }
 
 numbers {
