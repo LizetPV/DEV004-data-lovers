@@ -17,9 +17,9 @@ function mostrarData(pokemones) {
     const image = document.createElement("img"); //<img>
     image.src = pokemon["img"];
     card.appendChild(image); 
+    card.appendChild(numbers);
     card.appendChild(name);
     card.appendChild(categoria);
-    card.appendChild(numbers);
     data.appendChild(card);
   });
 }
