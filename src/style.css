@@ -5,14 +5,17 @@
     color: var(--clr-black);
     font-family: 'Rubik', sans-serif;
 }
+
 ul{
     list-style-type: none;
 }
+
 button {
     background-color: transparent;
     border: 0;
     border-radius: 0;
 }
+
 body {
     background: #FFE4C4;
     background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
@@ -24,10 +27,12 @@ body {
     font-family: 'Lato';
     margin: 0;
 }
+
 header {
     padding-block: 1rem;
     box-shadow: 0 0 -1rem rgba(0, 0, 0, .5 black);
 }
+
 :root {
     --clr-black: #1C1C1C;
     --clr-gray: #FFC300;
@@ -52,7 +57,8 @@ header {
     --Type-steel: #E0FFFF;
     --Type-fairy: #7CFC00;
 }
-.nav {
+
+.nav { /* botones de tipo pokemon*/
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -61,13 +67,15 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 }
-.nav-list {
+
+.nav-list { /* botones de tipo pokemon*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: .5rem;
 }
-.btn-header {
+
+.btn-header { /* diseño de los botones de tipo pokemon*/
     background-color: var(--clr-gray);
     padding: .5rem;
     border-radius: 100vmax;
@@ -77,21 +85,25 @@ header {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .25 black);
     transition: .2s;
 }
+
 .btn-header:hover {
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(black, 0, 0, .25);
 }
-main {
+
+/* main {
     padding: 2rem;
-    max-width: 1000px;
+    max-width: max-content;
     margin: 0 auto;
-}
+} 
+
 .pokemon-todos {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
 }
 
+ 
 @media screen and (min-width:470px) {
     .pokemon-todos {
         grid-template-columns: 1fr 1fr;
@@ -109,7 +121,7 @@ main {
         background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
         background: linear-gradient(to right, #DA70D6, #FFFF00);
     }
-}
+}*/
 
 div {
     border-radius: 1rem;
@@ -119,7 +131,10 @@ div {
     position: relative;
     isolation: isolate;
     overflow: hidden;
+    width: max-content;
+    height: max-content;
 }
+
 numbers {
     position: absolute;
     top: 1rem;
@@ -131,15 +146,16 @@ numbers {
     z-index: -1;
     color: var(--clr-gray);
 }
-img {
+
+img { /* imagen logo */
     float: initial;
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 6rem;
-    content: "";
+    max-width: 10rem;
 }
+
 name {
     display: flex;
     align-items: center;
@@ -148,6 +164,7 @@ name {
     justify-content: center;
     font-family: 1.4rem;
 }
+
 type {
     align-items: center;
     border-radius: 100vmax;
