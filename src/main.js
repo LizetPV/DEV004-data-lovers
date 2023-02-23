@@ -1,23 +1,19 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
-console.log(dataPokemon.pokemon);
 const divTarjeta = document.getElementById("data");
-console.log(divTarjeta)
-
 const mostrarData = (pokemones) => {
   divTarjeta.innerHTML = "";
   pokemones.forEach((pokemon) => {
-
     const card = document.createElement("div");
     const name = document.createElement("name");
     name.innerHTML= pokemon.name;
-    const numbers = document.createElement("numb");
+    const numbers = document.createElement("h1");
     numbers.innerHTML= pokemon.num;
     const type = document.createElement("type");
     type.innerHTML= pokemon.type;
     const image = document.createElement("img"); //<img>
-    image.setAttribute("src", pokemon.img); //image.src = 
+    image.setAttribute("src", pokemon.img); //image.src =
     divTarjeta.appendChild(card);
     card.appendChild(image);
     card.appendChild(numbers);
@@ -25,6 +21,6 @@ const mostrarData = (pokemones) => {
     card.appendChild(type);
   });
 }
-
 mostrarData(dataPokemon.pokemon);
-console.log(mostrarData(dataPokemon.pokemon));
+
+

@@ -1,38 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: var(--clr-black);
-    font-family: 'Rubik', sans-serif;
-}
-
 ul{
     list-style-type: none;
 }
-
 button {
     background-color: transparent;
     border: 0;
     border-radius: 0;
 }
-
 body {
-    background: #FFE4C4;
-    background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
     background: linear-gradient(to right, #DA70D6, #FFFF00);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Lato';
     margin: 0;
 }
-
 header {
     padding-block: 1rem;
     box-shadow: 0 0 -1rem rgba(0, 0, 0, .5 black);
 }
-
 :root {
     --clr-black: #1C1C1C;
     --clr-gray: #FFC300;
@@ -57,7 +38,6 @@ header {
     --Type-steel: #E0FFFF;
     --Type-fairy: #7CFC00;
 }
-
 .nav { /* botones de tipo pokemon*/
     display: flex;
     flex-direction: column;
@@ -67,14 +47,12 @@ header {
     max-width: 1000px;
     margin: 0 auto;
 }
-
 .nav-list { /* botones de tipo pokemon*/
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: .5rem;
 }
-
 .btn-header { /* diseño de los botones de tipo pokemon*/
     background-color: var(--clr-gray);
     padding: .5rem;
@@ -85,24 +63,10 @@ header {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .25 black);
     transition: .2s;
 }
-
 .btn-header:hover {
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(black, 0, 0, .25);
 }
-
-/* main {
-    padding: 2rem;
-    max-width: max-content;
-    margin: 0 auto;
-} 
-
-.pokemon-todos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-*/
 
     #data {
         display: flex;
@@ -114,61 +78,40 @@ header {
         flex-wrap: wrap;
         width: 100%;
     }
-
 div {
     border-radius: 1rem;
     background-color: #FFE4C4;
     padding-block: 1rem;
     text-transform: uppercase;
-    position: relative;
-    isolation: isolate;
-    overflow: hidden;
-    width: max-content;
-    height: max-content;
-    margin: 10px;
+    margin: 15px;
 }
-
-numbers {
-    position: absolute;
+numb {
+    position: absolut;
+    align-items: center;
     top: 1rem;
     transform: translateY(-50%);
     left: 50%;
     transform: translateX(-50%);
-    font-size: 6rem;
+    font-size: 2rem;
     font-weight: 800;
     z-index: -1;
     color: var(--clr-gray);
+    
 }
-
 img { /* imagen logo */
     float: initial;
     padding-inline: 1rem;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     max-width: 10rem;
 }
-
-p {
+name {
     display: flex;
     align-items: center;
     column-gap: .5rem;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: 1.4rem;
-}
-h1 {
-    align-items: center;
-    border-radius: 100vmax;
-    background-color: red;
-    display: flex;
-    gap: .5rem;
-    font-size: .75rem;
-    font-weight: 500;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 100vmax;
-    padding: .25rem .5rem;
     font-family: 1.4rem;
 }
 type {
@@ -195,42 +138,34 @@ type {
     padding: .25rem .5rem;
     border-radius: 100vmax;
 }
-
 .ver {
     background-color: var(--Type-ver);
     color: var(--clr-black)
 }
-
 .normal {
     background-color: var(--Type-normal);
     color: var(--clr-black)
 }
-
 .fire {
     background-color: var(--Type-fire);
     color: var(--clr-black)
 }
-
 .water {
     background-color: var(--Type-water);
     color: var(--clr-black)
 }
-
 .grass {
     background-color: var(--Type-grass);
     color: var(--clr-black)
 }
-
 .electric {
     background-color: var(--Type-electric);
     color: var(--clr-black)
 }
-
 .ice {
     background-color: var(--Type-ice);
     color: var(--clr-black)
 }
-
 .fighting {
     background-color: var(--Type-fighting);
     color: var(--clr-black)
@@ -239,12 +174,10 @@ type {
     background-color: var(--Type-poison);
     color: var(--clr-black)
 }
-
 .ground {
     background-color: var(--Type-ground);
     color: var(--clr-black)
 }
-
 .flying {
     background-color: var(--Type-flying);
     color: var(--clr-black)
@@ -253,37 +186,30 @@ type {
     background-color: var(--Type-psychic);
     color: var(--clr-black)
 }
-
 .bug {
     background-color: var(--Type-bug);
     color: var(--clr-black)
 }
-
 .rock {
     background-color: var(--Type-rock);
     color: var(--clr-black)
 }
-
 .ghost {
     background-color: var(--Type-ghost);
     color: var(--clr-black)
 }
-
 .dark {
     background-color: var(--Type-dark);
     color: var(--clr-black)
 }
-
 .dragon {
     background-color: var(--Type-dragon);
     color: var(--clr-black)
 }
-
 .steel {
     background-color: var(--Type-steel);
     color: var(--clr-black)
 }
-
 .fairy {
     background-color: var(--Type-fairy);
     color: var(--clr-black)
