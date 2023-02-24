@@ -13,7 +13,8 @@ const mostrarData = (pokemones) => {
     const type = document.createElement("type");
     type.innerHTML= pokemon.type;
     const image = document.createElement("img"); //<img>
-    image.setAttribute("src", pokemon.img); //image.src =
+    image.setAttribute("src", pokemon.img); //image.src = pokemon.img
+    image.setAttribute("class","imagenPokemones");
     divTarjeta.appendChild(card);
     card.appendChild(image);
     card.appendChild(numbers);
