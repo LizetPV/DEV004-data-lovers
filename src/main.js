@@ -1,15 +1,30 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
-//Enviar solicitud al servideor para obtener archivo json. y como argumento tendra el nombre del archivo
+//const cortarData = dataPokemon.pokemon.slice(0,10);
+const divTarjeta = document.getElementById("data");
 
-function mostrarData(pokemon) {
-  const placeholder = document.getElementById("data");
-
-  pokemon.forEach((diccionario) => {
+const mostrarData = (pokemones) => {
+  divTarjeta.innerHTML = "";
+  pokemones.forEach((pokemon) => {
+    const card = document.createElement("div");
+    const name = document.createElement("name");
+    name.innerHTML= pokemon.name;
+    const numbers = document.createElement("h1");
+    numbers.innerHTML= pokemon.num;
+    const type = document.createElement("type");
+    type.innerHTML= pokemon.type;
     const image = document.createElement("img"); //<img>
-    image.src = diccionario["img"];
-    placeholder.appendChild(image); // <div id="data-output"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> <img  src="linkdeimagen"> </div>
+    image.setAttribute("src", pokemon.img); //image.src = pokemon.img
+    image.setAttribute("class","imagenPokemones");
+    type.setAttribute("class","typePokemon")
+    divTarjeta.appendChild(card);
+    card.appendChild(image);
+    card.appendChild(numbers);
+    card.appendChild(name);
+    card.appendChild(type);
   });
 }
 mostrarData(dataPokemon.pokemon);
+
+
 
