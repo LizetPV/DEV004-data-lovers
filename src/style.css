@@ -104,7 +104,7 @@ name {
     justify-content: center;
   
 }
-type {
+.typePokemon {
     border-radius: 100vmax;
     background-color: red;
     display: flex;
