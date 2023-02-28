@@ -91,7 +91,6 @@ h1 {
     color: var(--clr-gray);
     display: flex;
     justify-content: center;
-    
 }
 .imagenPokemones { /* imagen logo */
     padding-inline: 1rem;
@@ -102,10 +101,10 @@ h1 {
 name {
     display: flex;
     justify-content: center;
-  
 }
 .typePokemon {
     border-radius: 100vmax;
+    background-color: red;
     display: flex;
     font-size: .75rem;
     justify-content: center;
@@ -127,7 +126,7 @@ name {
 }
 .normal {
     background-color: var(--Type-normal);
-    color: var(--clr-black);
+    color: var(--clr-black)
 }
 .fire {
     background-color: var(--Type-fire);

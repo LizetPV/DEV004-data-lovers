@@ -2,7 +2,6 @@
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
 const divTarjeta = document.getElementById("data");
-
 const mostrarData = (pokemones) => {
   divTarjeta.innerHTML = "";
   pokemones.forEach((pokemon) => {
@@ -25,6 +24,3 @@ const mostrarData = (pokemones) => {
   });
 }
 mostrarData(dataPokemon.pokemon);
-
-
-
