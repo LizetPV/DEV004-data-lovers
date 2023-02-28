@@ -100,10 +100,11 @@ h1 {
     width: 80%;
     max-width: 10rem;
 }
-name {
+.name {
     display: flex;
     justify-content: center;
-  
+    font-weight: bold;
+   
 }
 .typePokemon {
     border-radius: 100vmax;
@@ -111,6 +112,7 @@ name {
     font-size: .75rem;
     justify-content: center;
     padding: .25rem .5rem;
+    background-color: #FF0000;
 }
 .pokemon-stats {
     display: flex;

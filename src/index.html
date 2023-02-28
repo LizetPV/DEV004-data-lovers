@@ -10,7 +10,13 @@
     <nav class="nav">
       <img src="./imagenes/logo.jpg" id="logo">
       <ul class="nav-list">
-        <li><button class="btn btn-header ver" id="ver-todos" value="ver-todos">Ver-todos</button></li>
+        <div>
+        <select><button class="btn btn-header ver" id="ver-todos" value="list-desple">Ver-todos</button>
+        <option value="ver-todos"> ver todos</option>
+        <option value="nameAsc">A-Z</option>
+        <option value="nameDesc">Z-A</option>
+        </select>
+      </div>
         <li><button class="btn btn-header normal" id="ver-todos-normal" value="normal">Normal</button></li>
         <li><button class="btn btn-header fire" id="ver-todos-fire" value ="fire">Fuego</button></li>
         <li><button class="btn btn-header water" id="ver-todos-water" value="water">Agua</button></li>

@@ -16,6 +16,7 @@ const mostrarData = (pokemones) => {
     type.innerHTML = pokemon.type;
     const image = document.createElement("img"); //<img>
     image.setAttribute("src", pokemon.img); //image.src = pokemon.img
+    name.setAttribute("class", "name");
     image.setAttribute("class", "imagenPokemones");
     type.setAttribute("class", "typePokemon");
     divTarjeta.appendChild(card);
@@ -29,11 +30,26 @@ mostrarData(dataPokemon.pokemon);
 
 botonesHeader.forEach((boton) =>
   boton.addEventListener("click", (event) => {
-    const botonFilter = event.currentTarget.value; 
+    const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
-    pokemones.innerHTML = ""; 
+    pokemones.innerHTML = "";
     const data = dataPokemon.pokemon;
     const filter = data.filter((poke) => poke.type.includes(botonFilter));
     mostrarData(filter);
+
   })
 );
+
+botonesHeader.forEach((boton) =>
+  boton.addEventListener("click", (event) => {
+    const botonFilter = event.currentTarget.value;
+    const pokemones = document.getElementById("data");
+    pokemones.innerHTML = "";
+    const data = dataPokemon.pokemon;
+    data.sort();
+    data.reverse();
+  })
+);
+
+
+
