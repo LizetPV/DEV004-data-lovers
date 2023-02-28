@@ -1,30 +1,39 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
+import { filterPokemonsByType } from "./data.js";
 const divTarjeta = document.getElementById("data");
-
+const botonesHeader = document.querySelectorAll(".btn-header");
 const mostrarData = (pokemones) => {
   divTarjeta.innerHTML = "";
   pokemones.forEach((pokemon) => {
     const card = document.createElement("div");
     const name = document.createElement("name");
-    name.innerHTML= pokemon.name;
+    name.innerHTML = pokemon.name;
     const numbers = document.createElement("h1");
-    numbers.innerHTML= pokemon.num;
+    numbers.innerHTML = pokemon.num;
     const type = document.createElement("type");
-    type.innerHTML= pokemon.type;
+    type.innerHTML = pokemon.type;
     const image = document.createElement("img"); //<img>
     image.setAttribute("src", pokemon.img); //image.src = pokemon.img
-    image.setAttribute("class","imagenPokemones");
-    type.setAttribute("class","typePokemon")
+    image.setAttribute("class", "imagenPokemones");
+    type.setAttribute("class", "typePokemon");
     divTarjeta.appendChild(card);
     card.appendChild(image);
     card.appendChild(numbers);
     card.appendChild(name);
     card.appendChild(type);
   });
-}
+};
 mostrarData(dataPokemon.pokemon);
 
-
-
+botonesHeader.forEach((boton) =>
+  boton.addEventListener("click", (event) => {
+    const botonFilter = event.currentTarget.value; 
+    const pokemones = document.getElementById("data");
+    pokemones.innerHTML = ""; 
+    const data = dataPokemon.pokemon;
+    const filter = data.filter((poke) => poke.type.includes(botonFilter));
+    mostrarData(filter);
+  })
+);
