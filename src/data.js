@@ -7,3 +7,7 @@ export const pokemon = ( ) => {
 //export const anotherExample = () => {
   //return 'OMG';
 //};*/
+
+export function filterPokemonsByType() {
+ 
+}
