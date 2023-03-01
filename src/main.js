@@ -30,7 +30,6 @@ mostrarData(dataPokemon.pokemon);
 
 botonesHeader.forEach((boton) =>
   boton.addEventListener("click", (event) => {
-    
     const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
     pokemones.innerHTML = "";
@@ -39,26 +38,24 @@ botonesHeader.forEach((boton) =>
     mostrarData(filter);
   })
 );
-const selectOrdenar = document.getElementById("selectOrdenar")
+const selectOrdenar = document.getElementById("selectOrdenar");
 selectOrdenar.addEventListener("change", (event) => {
   /*console.log(event);
   console.log(event.currentTarget);
   console.log(event.currentTarget.value);*/
   const opcionElegida = event.currentTarget.value;
-  console.log(opcionElegida);
-  if (opcionElegida === "nameAsc"){
-
-   // console.log(dataPokemon.pokemon);
+  if (opcionElegida === "nameAsc") {
+    // console.log(dataPokemon.pokemon);
     const copiaData = [...dataPokemon.pokemon];
     //console.log(copiaData);
     const ordenado = copiaData.sort();
-  //  console.log(ordenado);
-  mostrarData(ordenado)
-  } else if(opcionElegida === "nameDesc"){
+    //  console.log(ordenado);
+    mostrarData(ordenado);
+  } else if (opcionElegida === "nameDesc") {
     const reversado = dataPokemon.pokemon.reverse();
- // console.log(reversado);
-    mostrarData(reversado)
-  } else{
-    "ver-todos"
+    // console.log(reversado);
+    mostrarData(reversado);
+  } else {
+    ("ver-todos");
   }
 });
