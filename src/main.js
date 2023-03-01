@@ -30,26 +30,35 @@ mostrarData(dataPokemon.pokemon);
 
 botonesHeader.forEach((boton) =>
   boton.addEventListener("click", (event) => {
+    
     const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
     pokemones.innerHTML = "";
     const data = dataPokemon.pokemon;
     const filter = data.filter((poke) => poke.type.includes(botonFilter));
     mostrarData(filter);
-
   })
 );
+const selectOrdenar = document.getElementById("selectOrdenar")
+selectOrdenar.addEventListener("change", (event) => {
+  /*console.log(event);
+  console.log(event.currentTarget);
+  console.log(event.currentTarget.value);*/
+  const opcionElegida = event.currentTarget.value;
+  console.log(opcionElegida);
+  if (opcionElegida === "nameAsc"){
 
-botonesHeader.forEach((boton) =>
-  boton.addEventListener("click", (event) => {
-    const botonFilter = event.currentTarget.value;
-    const pokemones = document.getElementById("data");
-    pokemones.innerHTML = "";
-    const data = dataPokemon.pokemon;
-    data.sort();
-    data.reverse();
-  })
-);
-
-
-
+   // console.log(dataPokemon.pokemon);
+    const copiaData = [...dataPokemon.pokemon];
+    //console.log(copiaData);
+    const ordenado = copiaData.sort();
+  //  console.log(ordenado);
+  mostrarData(ordenado)
+  } else if(opcionElegida === "nameDesc"){
+    const reversado = dataPokemon.pokemon.reverse();
+ // console.log(reversado);
+    mostrarData(reversado)
+  } else{
+    "ver-todos"
+  }
+});
