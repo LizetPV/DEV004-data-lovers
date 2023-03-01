@@ -47,11 +47,11 @@ selectOrdenar.addEventListener("change", (event) => {
     // console.log(dataPokemon.pokemon);
     const copiaData = [...dataPokemon.pokemon];
     //console.log(copiaData);
-    const ordenado = copiaData.sort();
+    const ordenado = copiaData.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase()));
     //  console.log(ordenado);
     mostrarData(ordenado);
   } else if (opcionElegida === "nameDesc") {
-    const reversado = dataPokemon.pokemon.reverse();
+    const reversado = dataPokemon.pokemon.reverse((b, a) => b.name.toLowerCase().localeCompare(a.name.toLowerCase()));
     // console.log(reversado);
     mostrarData(reversado);
   } else {

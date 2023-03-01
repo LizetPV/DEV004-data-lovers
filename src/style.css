@@ -1,46 +1,50 @@
 ul{
     list-style-type: none;
 }
+
 button {
     border: 0;
 }
+
 body {
     background: linear-gradient(to right, #DA70D6, #FFFF00);
     margin: 0;
 }
 
-/*#logo{
-  width: 20%;
-  background-image: url(./imagenes/logo.jpg);
-}*/
+.img-container {
+    text-align: center;
+  }
+
 :root {
     --clr-black: #1C1C1C;
     --clr-gray: #FFC300;
     --clr-white: #F7F7F7;
     --Type-ver: #D2B4DE;
     --Type-normal: #98FB98;
-    --Type-fire: #FF0000;
-    --Type-water: #00FFFF;
-    --Type-grass: #688E23;
-    --Type-electric: #C78132;
-    --Type-ice: #48D1CC;
+    --Type-fire: #F67B45;
+    --Type-water: #ABDEE6;
+    --Type-grass: #B4CFA4;
+    --Type-electric: #F4D35E;
+    --Type-ice: #8FCACA;
     --Type-fighting: #C559AF;
     --Type-poison: #B6ADE5;
     --Type-ground: #DAA520;
-    --Type-flying: #6495ED;
+    --Type-flying: #81B2D9;
     --Type-psychic: #DCDCDC;
-    --Type-bug: #BC8F8F;
-    --Type-rock: #C0C0C0;
+    --Type-bug: #62866C;
+    --Type-rock: #CB7876;
     --Type-ghost: #F0FFF0;
     --Type-dark: #A9A9A9;
     --Type-dragon: #FFA500;
     --Type-steel: #E0FFFF;
     --Type-fairy: #7CFC00;
 }
+
 .nav { /* botones de tipo pokemon*/
     display: flex;
     padding-inline: 1rem;
 }
+
 .nav-list { /* botones de tipo pokemon*/
     display: flex;
     flex-wrap: wrap;
@@ -48,6 +52,7 @@ body {
     padding-block: 2ram;
     align-content: center;
 }
+
 .btn-header { /* diseño de los botones de tipo pokemon*/
     padding: .8rem;
     border-radius: 50vmax;
@@ -55,9 +60,10 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     transition: .2s;
-    border: 5px solid rgb(20, 20, 20);
+    border: 3px solid rgb(100, 68, 32);
     margin: 1px;
 }
+
 .btn-header:hover{
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(black, 0 ,0,.25);
@@ -72,6 +78,7 @@ body {
         flex-wrap: wrap;
         width: 100%;
     }
+
 div {
     border-radius: 1rem;
     background-color: #FFE4C4;
@@ -79,23 +86,27 @@ div {
     text-transform: uppercase;
     margin: 15px;
 }
+
 h1 {
     transform: translateY(-50%);
     color: var(--clr-gray);
     display: flex;
     justify-content: center;
 }
+
 .imagenPokemones { /* imagen logo */
     padding-inline: 1rem;
     display: flex;
     width: 80%;
     max-width: 10rem;
 }
+
 .name {
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
+
 .typePokemon {
     border-radius: 100vmax;
     display: flex;
@@ -104,88 +115,109 @@ h1 {
     padding: .25rem .5rem;
     background-color: #FF0000;
 }
+
 .pokemon-stats {
     display: flex;
     gap: 1rem;
     font-size: .85rem;
 }
+
 .stats {
     background-color: var(--clr-gray);
     padding: .25rem .5rem;
     border-radius: 100vmax;
 }
+
 .ver {
     background-color: var(--Type-ver);
     color: var(--clr-black)
 }
+
 .normal {
     background-color: var(--Type-normal);
     color: var(--clr-black);
 }
+
 .fire {
     background-color: var(--Type-fire);
     color: var(--clr-black)
 }
+
 .water {
     background-color: var(--Type-water);
     color: var(--clr-black)
 }
+
 .grass {
     background-color: var(--Type-grass);
     color: var(--clr-black)
 }
+
 .electric {
     background-color: var(--Type-electric);
     color: var(--clr-black)
 }
+
 .ice {
     background-color: var(--Type-ice);
     color: var(--clr-black)
 }
+
 .fighting {
     background-color: var(--Type-fighting);
     color: var(--clr-black)
 }
+
 .poison {
     background-color: var(--Type-poison);
     color: var(--clr-black)
 }
+
 .ground {
     background-color: var(--Type-ground);
     color: var(--clr-black)
 }
+
 .flying {
     background-color: var(--Type-flying);
     color: var(--clr-black)
 }
+
 .psychic {
     background-color: var(--Type-psychic);
     color: var(--clr-black)
 }
+
 .bug {
     background-color: var(--Type-bug);
     color: var(--clr-black)
 }
+
 .rock {
     background-color: var(--Type-rock);
     color: var(--clr-black)
 }
+
 .ghost {
     background-color: var(--Type-ghost);
     color: var(--clr-black)
 }
+
 .dark {
     background-color: var(--Type-dark);
     color: var(--clr-black)
 }
+
 .dragon {
     background-color: var(--Type-dragon);
     color: var(--clr-black)
 }
+
 .steel {
     background-color: var(--Type-steel);
     color: var(--clr-black)
 }
+
 .fairy {
     background-color: var(--Type-fairy);
     color: var(--clr-black);
