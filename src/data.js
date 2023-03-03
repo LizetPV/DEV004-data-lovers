@@ -7,7 +7,16 @@ export const pokemon = ( ) => {
 //export const anotherExample = () => {
   //return 'OMG';
 //};*/
-
-export function filterPokemonsByType() {
+function filterPokemonsByType() {
  
+}
+
+ const filter =(condicion,data)=>{
+  return data.filter((poke) => poke.type.includes(condicion));
+}
+
+
+export {
+  filter,
+  filterPokemonsByType
 }

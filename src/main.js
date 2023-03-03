@@ -1,7 +1,7 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
-import { filterPokemonsByType } from "./data.js";
+import { filter } from "./data.js";
 const divTarjeta = document.getElementById("data");
 const botonesHeader = document.querySelectorAll(".btn-header");
 const mostrarData = (pokemones) => {
@@ -32,9 +32,13 @@ botonesHeader.forEach((boton) =>
     const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
     pokemones.innerHTML = "";
-    const data = dataPokemon.pokemon;
-    const filter = data.filter((poke) => poke.type.includes(botonFilter));
-    mostrarData(filter);
+
+
+    const pokemonData = dataPokemon.pokemon;
+
+    const dataFiltrada=filter(botonFilter,pokemonData)
+
+    mostrarData(dataFiltrada);
   })
 );
 const selectOrdenar = document.getElementById("selectOrdenar");
