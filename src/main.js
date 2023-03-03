@@ -47,14 +47,16 @@ selectOrdenar.addEventListener("change", (event) => {
     // console.log(dataPokemon.pokemon);
     const copiaData = [...dataPokemon.pokemon];
     //console.log(copiaData);
-    const ordenado = copiaData.sort();
+    const ordenado = copiaData.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase())); //A-Z
     //  console.log(ordenado);
     mostrarData(ordenado);
   } else if (opcionElegida === "nameDesc") {
-    const reversado = dataPokemon.pokemon.reverse();
+    const reversado = dataPokemon.pokemon.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase())); //Z-A
     // console.log(reversado);
     mostrarData(reversado);
   } else {
-    ("ver-todos");
+    const copiaData = [...dataPokemon.pokemon];
+    const ordenado = copiaData.sort((a, b) => a.num.toLowerCase().localeCompare(b.num.toLowerCase()));
+    mostrarData(ordenado);
   }
 });
