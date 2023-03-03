@@ -9,5 +9,5 @@ export const pokemon = ( ) => {
 //};*/
 
 export function filterPokemonsByType() {
- 
+  
 }
