@@ -20,6 +20,7 @@ const mostrarData = (pokemones) => {
     image.setAttribute("class", "imagenPokemones");
     type.setAttribute("class", "typePokemon");
     divTarjeta.appendChild(card);
+    
     card.appendChild(image);
     card.appendChild(numbers);
     card.appendChild(name);

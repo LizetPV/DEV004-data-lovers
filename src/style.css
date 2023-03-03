@@ -9,14 +9,21 @@ button {
 body {
     background: linear-gradient(to right, #DA70D6, #FFFF00);
     margin: 0;
+    background-image: url(./imagenes/f2bc241aef327d4e625ece8a3fef39e0.gif);
 }
 
 .img-container {
     text-align: center;
   }
+  #selectOrdenar{
+    padding: .8rem;
+    border-radius: 50vmax;
+    border: 3px solid rgb(30, 29, 28);
+    background-color: #76D7C4;
+  }
 
 :root {
-    --clr-black: #1C1C1C;
+    --clr-black: #F1C40F ;
     --clr-gray: #FFC300;
     --clr-white: #F7F7F7;
     --Type-ver: #D2B4DE;
@@ -51,6 +58,7 @@ body {
     gap: 5%;
     padding-block: 2ram;
     align-content: center;
+    
 }
 
 .btn-header { /* diseño de los botones de tipo pokemon*/
@@ -60,13 +68,15 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     transition: .2s;
-    border: 3px solid rgb(100, 68, 32);
+    border: 3px solid rgb(14, 8, 0);
     margin: 1px;
+    color: #F4D03F;
+    border-color: #17202A ;
 }
 
 .btn-header:hover{
     transform: scale(1.1);
-    box-shadow: 0 0 2rem rgba(black, 0 ,0,.25);
+    box-shadow: 0 0 2rem rgba(rgb(245, 230, 112), 0 ,0,.25);
     }
     #data {
         display: flex;
@@ -77,14 +87,15 @@ body {
         background: linear-gradient(to right, #DA70D6, #FFFF00);
         flex-wrap: wrap;
         width: 100%;
+        background-image: url(./imagenes/f2bc241aef327d4e625ece8a3fef39e0.gif);
     }
 
 div {
     border-radius: 1rem;
-    background-color: #FFE4C4;
-    padding-block: 1rem;
+    background-color:#FDFEFE ;
+    padding-block: .5rem;
     text-transform: uppercase;
-    margin: 15px;
+    margin: 5px;
 }
 
 h1 {
@@ -128,100 +139,6 @@ h1 {
     border-radius: 100vmax;
 }
 
-.ver {
-    background-color: var(--Type-ver);
-    color: var(--clr-black)
-}
-
-.normal {
-    background-color: var(--Type-normal);
-    color: var(--clr-black);
-}
-
-.fire {
-    background-color: var(--Type-fire);
-    color: var(--clr-black)
-}
-
-.water {
-    background-color: var(--Type-water);
-    color: var(--clr-black)
-}
-
-.grass {
-    background-color: var(--Type-grass);
-    color: var(--clr-black)
-}
-
-.electric {
-    background-color: var(--Type-electric);
-    color: var(--clr-black)
-}
-
-.ice {
-    background-color: var(--Type-ice);
-    color: var(--clr-black)
-}
-
-.fighting {
-    background-color: var(--Type-fighting);
-    color: var(--clr-black)
-}
-
-.poison {
-    background-color: var(--Type-poison);
-    color: var(--clr-black)
-}
-
-.ground {
-    background-color: var(--Type-ground);
-    color: var(--clr-black)
-}
-
-.flying {
-    background-color: var(--Type-flying);
-    color: var(--clr-black)
-}
-
-.psychic {
-    background-color: var(--Type-psychic);
-    color: var(--clr-black)
-}
-
-.bug {
-    background-color: var(--Type-bug);
-    color: var(--clr-black)
-}
-
-.rock {
-    background-color: var(--Type-rock);
-    color: var(--clr-black)
-}
-
-.ghost {
-    background-color: var(--Type-ghost);
-    color: var(--clr-black)
-}
-
-.dark {
-    background-color: var(--Type-dark);
-    color: var(--clr-black)
-}
-
-.dragon {
-    background-color: var(--Type-dragon);
-    color: var(--clr-black)
-}
-
-.steel {
-    background-color: var(--Type-steel);
-    color: var(--clr-black)
-}
-
-.fairy {
-    background-color: var(--Type-fairy);
-    color: var(--clr-black);
-}
 
 
 
