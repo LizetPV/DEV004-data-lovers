@@ -1,7 +1,8 @@
 //se importa la dat de la corresponiente ruta
 import dataPokemon from "./data/pokemon/pokemon.js";
 //const cortarData = dataPokemon.pokemon.slice(0,10);
-import { filter } from "./data.js";
+const data = dataPokemon.pokemon;
+import { filter, ordenar } from "./data.js";
 const divTarjeta = document.getElementById("data");
 const botonesHeader = document.querySelectorAll(".btn-header");
 const mostrarData = (pokemones) => {
@@ -26,41 +27,33 @@ const mostrarData = (pokemones) => {
     card.appendChild(type);
   });
 };
-mostrarData(dataPokemon.pokemon);
+mostrarData(data);
 botonesHeader.forEach((boton) =>
   boton.addEventListener("click", (event) => {
     const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
     pokemones.innerHTML = "";
 
-
-    const pokemonData = dataPokemon.pokemon;
-
-    const dataFiltrada=filter(botonFilter,pokemonData)
+    const dataFiltrada = filter(botonFilter, data)
 
     mostrarData(dataFiltrada);
   })
 );
 const selectOrdenar = document.getElementById("selectOrdenar");
-selectOrdenar.addEventListener("change", (event) => {
+selectOrdenar.addEventListener("change", () => {
   /*console.log(event);
   console.log(event.currentTarget);
   console.log(event.currentTarget.value);*/
-  const opcionElegida = event.currentTarget.value;
-  if (opcionElegida === "nameAsc") {
-    // console.log(dataPokemon.pokemon);
-    const copiaData = [...dataPokemon.pokemon];
-    //console.log(copiaData);
-    const ordenado = copiaData.sort((a, b) => a.name.toLowerCase().localeCompare(b.name.toLowerCase())); //A-Z
-    //  console.log(ordenado);
-    mostrarData(ordenado);
-  } else if (opcionElegida === "nameDesc") {
-    const reversado = dataPokemon.pokemon.sort((a, b) => b.name.toLowerCase().localeCompare(a.name.toLowerCase())); //Z-A
-    // console.log(reversado);
-    mostrarData(reversado);
-  } else {
-    const copiaData = [...dataPokemon.pokemon];
-    const ordenado = copiaData.sort((a, b) => a.num.toLowerCase().localeCompare(b.num.toLowerCase()));
-    mostrarData(ordenado);
+  const dataOriginal = [...data]
+  const opcionElegida = selectOrdenar.value;
+  if (opcionElegida === "all") {
+    console.log(data)
+
+    mostrarData(dataOriginal);
+  }
+  else {
+    const dataOrdenadaAZ = ordenar(opcionElegida, dataOriginal);
+
+    mostrarData(dataOrdenadaAZ);
   }
 });
