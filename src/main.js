@@ -20,7 +20,6 @@ const mostrarData = (pokemones) => {
     image.setAttribute("class", "imagenPokemones");
     type.setAttribute("class", "typePokemon");
     divTarjeta.appendChild(card);
-    
     card.appendChild(image);
     card.appendChild(numbers);
     card.appendChild(name);
@@ -33,12 +32,8 @@ botonesHeader.forEach((boton) =>
     const botonFilter = event.currentTarget.value;
     const pokemones = document.getElementById("data");
     pokemones.innerHTML = "";
-
-
     const pokemonData = dataPokemon.pokemon;
-
     const dataFiltrada=filter(botonFilter,pokemonData)
-
     mostrarData(dataFiltrada);
   })
 );
