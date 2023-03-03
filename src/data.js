@@ -11,7 +11,7 @@ function filterPokemonsByType() {
  
 }
 
- const filter =(condicion,data)=>{
+const filter =(condicion,data)=>{
   return data.filter((poke) => poke.type.includes(condicion));
 }
 
