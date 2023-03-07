@@ -1,6 +1,6 @@
-import { example, anotherExample } from '../src/data.js';
+import { filter, ordenar } from '../src/data.js';
 
-
+/*
 describe('example', () => {
   it('is a function', () => {
     const example = function (){
@@ -24,3 +24,15 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+*/
+
+
+function filter(option, data) {
+  return {
+    toBe(data.filter((poke) => poke.type.includes(option))) {
+      if(result !== expected) {
+        throw new Error(`${result} is not equal a ${expected} 😕`)
+      }
+    }
+  }
+}
