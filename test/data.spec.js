@@ -1,12 +1,13 @@
-import { example, anotherExample } from '../src/data.js';
+//import { example, anotherExample } from '../src/data.js';
+import { filter,ordenar} from "../src/data.js";
 
 
-describe('example', () => {
-  it('is a function', () => {
-    const example = function (){
-      return null
+describe('el boton ordenar, filtre correctamente de ascendente a descendente', () => {
+  it('filter', () => {
+    const testFilter = function (){
+      return true
     }
-    expect(typeof example).toBe('function');
+    expect(mostrarData.filter).toBe(Option.type);
   });
 
   it('returns `example`', () => {
