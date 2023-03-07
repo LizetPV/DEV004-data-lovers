@@ -4,11 +4,11 @@ import { filter, ordenar } from "../src/data.js";
 
 describe('Filter', () => {
   // funcion existe
-  it('filter deberia ser una funcion', ()=>{
+  it('filter deberia ser una funcion', () => {
     expect(typeof filter).toBe('function')
   })
   // comportamiento deseado de la funcion
-  const data =  [{
+  const data = [{
     "num": "001",
     "name": "bulbasaur",
     "type": [
@@ -46,20 +46,20 @@ describe('Filter', () => {
       "fire"
     ],
   }]
-  it('filter deberia filtra por tipo', ()=>{
+  it('filter deberia filtra por tipo', () => {
     expect(filter('grass', data)).toStrictEqual([
-      { num: '001', name: 'bulbasaur', type: [ 'grass', 'poison' ] },
-      { num: '002', name: 'ivysaur', type: [ 'grass', 'poison' ] },
-      { num: '003', name: 'venusaur', type: [ 'grass', 'poison' ] }
+      { num: '001', name: 'bulbasaur', type: ['grass', 'poison'] },
+      { num: '002', name: 'ivysaur', type: ['grass', 'poison'] },
+      { num: '003', name: 'venusaur', type: ['grass', 'poison'] }
     ])
   })
   // estrese la funcion
-  it('filter deberia retornar algo',()=>{
+  it('filter deberia retornar algo', () => {
     // expect(filter('', data)).toBe(false)
-    expect(filter('',data)).toBeFalsy()
+    expect(filter('', data)).toBeFalsy()
     expect(filter('water', [])).toBeFalsy()
   })
- 
+
 });
 
 
@@ -75,63 +75,30 @@ describe('Filter', () => {
 
 describe('Ordenar', () => {
   // funcion existe
-  it('Ordenar los pokemones alfabéticamente Ascendente', ()=>{
+  it('Ordenar los pokemones alfabéticamente Ascendente', () => {
     expect(typeof ordenar).toBe('function')
   })
   // comportamiento deseado de la funcion
-  const dataOrdenar =  [{
-    "num": "001",
-    "name": "bulbasaur",
-    "type": [
-      "grass",
-      "poison"
-    ],
-  },
-  {
-    "num": "004",
-    "name": "charmander",
-    "type": [
-      "fire"
-    ],
-  },
-  {
-    "num": "005",
-    "name": "charmeleon",
-    "type": [
-      "fire"
-    ],
-  },
-  {
-    "num": "002",
-    "name": "ivysaur",
-    "type": [
-      "grass",
-      "poison"
-    ],
-  },
-  {
-    "num": "003",
-    "name": "venusaur",
-    "type": [
-      "grass",
-      "poison"
-    ],
-  }]
-  it.only('ordenar deberia filtrar los pokemones de forma ascendente', ()=>{
+  const dataOrdenar = [
+    {'name': 'venusaur'},
+    {'name': 'ivysaur'}, 
+    {'name': 'charmeleon'},   
+    {'name': 'charmander'}, 
+    {'name': 'bulbasaur'}]
+
+  it.only('ordenar deberia organizar a los pokemones de forma ascendente', () => {
     expect(ordenar('name', dataOrdenar)).toStrictEqual([
-      { num: '001', name: 'bulbasaur', type: [ 'grass', 'poison' ] },
-      { num: '004', name: 'charmander', type: [ 'fire' ] },
-      { num: '005', name: 'charmeleon', type: [ 'fire' ]},      
-      { num: '002', name: 'ivysaur', type: [ 'grass', 'poison' ] },
-      { num: '003', name: 'venusaur', type: [ 'grass', 'poison' ] }
-    ])
+      {'name': 'venusaur'},
+      {'name': 'ivysaur'}, 
+      {'name': 'charmeleon'},
+      {'name': 'charmander'},
+      {'name': 'bulbasaur'} ])
   })
-  /*
-  // estrese la funcion
-  it('filter deberia retornar algo',()=>{
-    // expect(filter('', data)).toBe(false)
-    expect(filter('',data)).toBeFalsy()
-    expect(filter('water', [])).toBeFalsy()
-  })*/
- 
-}); 
+})
+/*
+// estrese la funcion
+it('filter deberia retornar algo',()=>{
+  // expect(filter('', data)).toBe(false)
+  expect(filter('',data)).toBeFalsy()
+  expect(filter('water', [])).toBeFalsy()
+})*/

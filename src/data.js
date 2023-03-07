@@ -9,7 +9,7 @@ function filter(option, data){
   }
   return data.filter((poke) => poke.type.includes(option));
 }
-console.log(filter)
+
 
 function ordenar(condicion, dataPokemon){
   const ordenado = dataPokemon.sort((a, b) => {
