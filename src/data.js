@@ -4,6 +4,9 @@ function filterPokemonsByType() {
 }
 
 function filter(option, data){
+  if(option === '' || data.length === 0){
+    return false
+  }
   return data.filter((poke) => poke.type.includes(option));
 }
 console.log(filter)

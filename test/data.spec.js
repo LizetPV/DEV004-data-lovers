@@ -1,49 +1,137 @@
-<<<<<<< HEAD
-import { filter, ordenar } from '../src/data.js';
-
-/*
-describe('example', () => {
-  it('is a function', () => {
-    const example = function (){
-      return null
-=======
 //import { example, anotherExample } from '../src/data.js';
-import { filter,ordenar} from "../src/data.js";
+import { filter, ordenar } from "../src/data.js";
 
 
-describe('el boton ordenar, filtre correctamente de ascendente a descendente', () => {
-  it('filter', () => {
-    const testFilter = function (){
-      return true
->>>>>>> cbfca28c479ca3d017c619d9bd45a785f95b23a9
-    }
-    expect(mostrarData.filter).toBe(Option.type);
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
+describe('Filter', () => {
+  // funcion existe
+  it('filter deberia ser una funcion', ()=>{
+    expect(typeof filter).toBe('function')
+  })
+  // comportamiento deseado de la funcion
+  const data =  [{
+    "num": "001",
+    "name": "bulbasaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  },
+  {
+    "num": "002",
+    "name": "ivysaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  },
+  {
+    "num": "003",
+    "name": "venusaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  },
+  {
+    "num": "004",
+    "name": "charmander",
+    "type": [
+      "fire"
+    ],
+  },
+  {
+    "num": "005",
+    "name": "charmeleon",
+    "type": [
+      "fire"
+    ],
+  }]
+  it('filter deberia filtra por tipo', ()=>{
+    expect(filter('grass', data)).toStrictEqual([
+      { num: '001', name: 'bulbasaur', type: [ 'grass', 'poison' ] },
+      { num: '002', name: 'ivysaur', type: [ 'grass', 'poison' ] },
+      { num: '003', name: 'venusaur', type: [ 'grass', 'poison' ] }
+    ])
+  })
+  // estrese la funcion
+  it('filter deberia retornar algo',()=>{
+    // expect(filter('', data)).toBe(false)
+    expect(filter('',data)).toBeFalsy()
+    expect(filter('water', [])).toBeFalsy()
+  })
+ 
 });
 
 
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
+// describe('anotherExample', () => {
+//   it('is a function', () => {
+//     expect(typeof anotherExample).toBe('function');
+//   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
-});
-*/
+//   it('returns `anotherExample`', () => {
+//     expect(anotherExample()).toBe('OMG');
+//   });
+// });
 
-
-function filter(option, data) {
-  return {
-    toBe(data.filter((poke) => poke.type.includes(option))) {
-      if(result !== expected) {
-        throw new Error(`${result} is not equal a ${expected} 😕`)
-      }
-    }
-  }
-}
+describe('Ordenar', () => {
+  // funcion existe
+  it('Ordenar los pokemones alfabéticamente Ascendente', ()=>{
+    expect(typeof ordenar).toBe('function')
+  })
+  // comportamiento deseado de la funcion
+  const dataOrdenar =  [{
+    "num": "001",
+    "name": "bulbasaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  },
+  {
+    "num": "004",
+    "name": "charmander",
+    "type": [
+      "fire"
+    ],
+  },
+  {
+    "num": "005",
+    "name": "charmeleon",
+    "type": [
+      "fire"
+    ],
+  },
+  {
+    "num": "002",
+    "name": "ivysaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  },
+  {
+    "num": "003",
+    "name": "venusaur",
+    "type": [
+      "grass",
+      "poison"
+    ],
+  }]
+  it.only('ordenar deberia filtrar los pokemones de forma ascendente', ()=>{
+    expect(ordenar('name', dataOrdenar)).toStrictEqual([
+      { num: '001', name: 'bulbasaur', type: [ 'grass', 'poison' ] },
+      { num: '004', name: 'charmander', type: [ 'fire' ] },
+      { num: '005', name: 'charmeleon', type: [ 'fire' ]},      
+      { num: '002', name: 'ivysaur', type: [ 'grass', 'poison' ] },
+      { num: '003', name: 'venusaur', type: [ 'grass', 'poison' ] }
+    ])
+  })
+  /*
+  // estrese la funcion
+  it('filter deberia retornar algo',()=>{
+    // expect(filter('', data)).toBe(false)
+    expect(filter('',data)).toBeFalsy()
+    expect(filter('water', [])).toBeFalsy()
+  })*/
+ 
+}); 
