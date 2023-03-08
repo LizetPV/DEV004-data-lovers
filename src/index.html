@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <title>Pokedex</title>
-    <div id="root"></div>
-    <script src="main.js" type="module"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>WikiDex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div style="text-align: center" class="img-container">
+      <img src="./imagenes/CabeceraM.jpg" alt="Logo">
+    </div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li>
+        <select class="select-ordenar" id="selectOrdenar">
+        <option selected value="all">Ver todos</option>
+        <option value="nameAsc">A-Z</option>
+        <option value="nameDesc">Z-A</option>
+        </select>
+      </li>
+        <li><button class="btn btn-header normal" value="normal">Normal</button></li>
+        <li><button class="btn btn-header fire" value ="fire">Fuego</button></li>
+        <li><button class="btn btn-header water" value="water">Agua</button></li>
+        <li><button class="btn btn-header grass" value="grass">Hierba</button></li>
+        <li><button class="btn btn-header electric" value="electric">Electrico</button></li>
+        <li><button class="btn btn-header ice" value="ice">Hielo</button></li>
+        <li><button class="btn btn-header fighting" value="fighting">Pelea</button></li>
+        <li><button class="btn btn-header poison" value="poison">Veneno</button></li>
+        <li><button class="btn btn-header ground" value="ground">Tierra</button></li>
+        <li><button class="btn btn-header flying" value="flying">Vuelo</button></li>
+        <li><button class="btn btn-header psychic" value="psychic">Psíquico</button></li>
+        <li><button class="btn btn-header bug" value="bug">Bicho</button></li>
+        <li><button class="btn btn-header rock" value="rock">Roca</button></li>
+        <li><button class="btn btn-header ghost" value="ghost">Fantasma</button></li>
+        <li><button class="btn btn-header dark" value="dark">Oscuro</button></li>
+        <li><button class="btn btn-header dragon" value="dragon">Dragon</button></li>
+        <li><button class="btn btn-header steel" value="steel">Acero</button></li>
+        <li><button class="btn btn-header fairy" value="fairy">Hada</button></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="dataHtml">
+    </div>
+  </main>
+  <script src="main.js" type="module"></script>
+</body>
 </html>

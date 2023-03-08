@@ -1,8 +1,10 @@
-import { example, anotherExample } from '../src/data.js';
+import { filter, ordenar } from '../src/data.js';
 
-
-describe('example', () => {
+describe('filtrar los tipos de pokemones de agua', () => {
   it('is a function', () => {
+    const filterWater = function filter(option, data){
+      return data.filter((poke) => poke.type.includes(option));
+    }
     expect(typeof example).toBe('function');
   });
 
@@ -10,7 +12,6 @@ describe('example', () => {
     expect(example()).toBe('example');
   });
 });
-
 
 describe('anotherExample', () => {
   it('is a function', () => {
@@ -21,3 +22,13 @@ describe('anotherExample', () => {
     expect(anotherExample()).toBe('OMG');
   });
 });
+
+function expect(result) {
+  return {
+    toBe(expected) {
+      if(result !== expected) {
+        throw new Error(`${result} is not equal a ${expected} 😕`)
+      }
+    }
+  }
+}
