@@ -1,7 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
 import { filter, ordenar } from "../src/data.js";
-
-
 describe('Filter', () => {
   // funcion existe
   it('filter deberia ser una funcion', () => {
@@ -59,20 +57,15 @@ describe('Filter', () => {
     expect(filter('', data)).toBeFalsy()
     expect(filter('water', [])).toBeFalsy()
   })
-
 });
-
-
 // describe('anotherExample', () => {
 //   it('is a function', () => {
 //     expect(typeof anotherExample).toBe('function');
 //   });
-
 //   it('returns `anotherExample`', () => {
 //     expect(anotherExample()).toBe('OMG');
 //   });
 // });
-
 describe('Ordenar', () => {
   // funcion existe
   it('Ordenar los pokemones alfabéticamente Ascendente', () => {
@@ -81,15 +74,14 @@ describe('Ordenar', () => {
   // comportamiento deseado de la funcion
   const dataOrdenar = [
     {'name': 'venusaur'},
-    {'name': 'ivysaur'}, 
-    {'name': 'charmeleon'},   
-    {'name': 'charmander'}, 
+    {'name': 'ivysaur'},
+    {'name': 'charmeleon'},
+    {'name': 'charmander'},
     {'name': 'bulbasaur'}]
-
   it.only('ordenar deberia organizar a los pokemones de forma ascendente', () => {
     expect(ordenar('name', dataOrdenar)).toStrictEqual([
       {'name': 'venusaur'},
-      {'name': 'ivysaur'}, 
+      {'name': 'ivysaur'},
       {'name': 'charmeleon'},
       {'name': 'charmander'},
       {'name': 'bulbasaur'} ])
