@@ -2,8 +2,8 @@ import { filter, ordenar } from '../src/data.js';
 
 describe('filtrar los tipos de pokemones de agua', () => {
   it('is a function', () => {
-    const filterWater = function filter(option, data){
-      return data.filter((poke) => poke.type.includes(option));
+    const example = function (){
+      return null
     }
     expect(typeof example).toBe('function');
   });

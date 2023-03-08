@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 function filterPokemonsByType() {
 
@@ -25,3 +26,18 @@ export {
 }
 
 
+=======
+/*// estas funciones son de ejemplo
+
+export const pokemon = ( ) => {
+  return 'pokemon';
+};
+
+//export const anotherExample = () => {
+  //return 'OMG';
+//};*/
+
+export function filterPokemonsByType() {
+ 
+}
+>>>>>>> 5990e149ce8c417ca804829480594ee7f6d44863
