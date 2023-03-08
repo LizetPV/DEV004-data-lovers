@@ -1,18 +1,46 @@
 ul {
     list-style-type: none;
+    display: flexbox;
 }
 
 button {
     border: 0;
+    display: flexbox;
 }
 
 body {
     background: linear-gradient(to right, #DA70D6, #FFFF00);
     margin: 0;
+    display: flexbox;
+    cursor: url("https://cdn.custom-cursor.com/db/pointer/32/Pokemon_Pikachu_Pointer.png"), auto;
 }
 
+.nav{
+    display: flexbox;
+    padding-inline: 1rem;
+}
+
+header{
+    display: flexbox;
+}
+
+main{
+    display: flexbox;
+}
 .img-container {
     text-align: center;
+    background-color: transparent;
+    width: 90%;
+    display: flexbox;
+}
+
+.imagenPokemones {
+    /* imagen logo */
+    padding-inline: 1rem;
+    display: flexbox;
+    width: 80%;
+    max-width: 10rem;
+    align-items: center;
 }
 
 :root {
@@ -41,14 +69,7 @@ body {
     --Type-topTen: #f7ecd3;
 }
 
-.nav {
-    /* botones de tipo pokemon*/
-    display: flex;
-    padding-inline: 1rem;
-}
-
-.nav-list {
-    /* botones de tipo pokemon*/
+.nav-list {     /* disposición de los botones "tipo pokemon" */
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
@@ -56,8 +77,7 @@ body {
     align-content: center;
 }
 
-.btn-header {
-    /* diseño de los botones de tipo pokemon*/
+.btn-header {   /* diseño de los botones de tipo pokemon*/
     padding: .8rem;
     border-radius: 50vmax;
     cursor: pointer;
@@ -66,14 +86,15 @@ body {
     transition: .2s;
     border: 3px solid rgb(100, 68, 32);
     margin: 1px;
+    cursor: url("https://cdn.custom-cursor.com/db/11281/32/pokemon-ditto-pointer.png"), auto;
 }
 
-.btn-header:hover {
+.btn-header:hover { /* dan efecto a los botones al pasar el cursor sobre ellos */
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(black, 0, 0, .25);
 }
 
-#dataHtml {
+#dataHtml { /* da estructura a la página HTML */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,7 +105,7 @@ body {
     width: 100%;
 }
 
-.selectOrdenar {
+.selectOrdenar { /* Diseño para el botón seleccionar A-Z y Z-A */
     background: #2f3640;
     border-radius: 8px;
     color: #f5f6fa;
@@ -95,11 +116,11 @@ body {
     width: 100px;
 }
 
-.selectOrdenar .option {
+.selectOrdenar .option { /* tamaño botón opción */
     height: 30px;
 }
 
-div {
+div { /* div tarjeta de fondo del pokemon */
     border-radius: 1rem;
     background-color: #FFE4C4;
     padding-block: 1rem;
@@ -107,28 +128,20 @@ div {
     margin: 15px;
 }
 
-h1 {
+h1 { /* texto dentro de la tarjeta pokemon */
     transform: translateY(-50%);
     color: var(--clr-gray);
     display: flex;
     justify-content: center;
 }
 
-.imagenPokemones {
-    /* imagen logo */
-    padding-inline: 1rem;
-    display: flex;
-    width: 80%;
-    max-width: 10rem;
-}
-
-.name {
+.name { /* Nombre del pokemon*/
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
 
-.typePokemon {
+.typePokemon { /* Diseño del tipo de pokemon */
     border-radius: 100vmax;
     display: flex;
     font-size: .75rem;
