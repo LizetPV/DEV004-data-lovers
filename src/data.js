@@ -12,6 +12,8 @@ function filter(option, data){
 
 
 function ordenar(condicion, dataPokemon){
+  if(condicion === '' || dataPokemon.length === 0){
+    return false}
   const ordenado = dataPokemon.sort((a, b) => {
     if (condicion === "nameAsc") {
       return a.name.toLowerCase().localeCompare(b.name.toLowerCase());

@@ -1,11 +1,14 @@
 //import { example, anotherExample } from '../src/data.js';
 import { filter, ordenar } from "../src/data.js";
+
+
+// Pruebas unitarias para el "filter"
 describe('Filter', () => {
-  // funcion existe
+  //1° criterio para las pruebas: la función existe
   it('filter deberia ser una funcion', () => {
     expect(typeof filter).toBe('function')
   })
-  // comportamiento deseado de la funcion
+  //2° criterio para las pruebas: validar el comportamiento deseado de la funcion
   const data = [{
     "num": "001",
     "name": "bulbasaur",
@@ -51,7 +54,7 @@ describe('Filter', () => {
       { num: '003', name: 'venusaur', type: ['grass', 'poison'] }
     ])
   })
-  // estrese la funcion
+  //3° criterio para las pruebas: estresar la función
   it('filter deberia retornar algo', () => {
     // expect(filter('', data)).toBe(false)
     expect(filter('', data)).toBeFalsy()
@@ -72,25 +75,26 @@ describe('Ordenar', () => {
     expect(typeof ordenar).toBe('function')
   })
   // comportamiento deseado de la funcion
-  const dataOrdenar = [
+  const dataPokemon = [
     {'name': 'venusaur'},
-    {'name': 'ivysaur'},
-    {'name': 'charmeleon'},
-    {'name': 'charmander'},
+    {'name': 'ivysaur'}, 
+    {'name': 'charmeleon'},   
+    {'name': 'charmander'}, 
     {'name': 'bulbasaur'}]
-  it.only('ordenar deberia organizar a los pokemones de forma ascendente', () => {
-    expect(ordenar('name', dataOrdenar)).toStrictEqual([
+
+  it('ordenar deberia organizar a los pokemones de forma ascendente', () => {
+    expect(ordenar('name', dataPokemon)).toStrictEqual([
       {'name': 'venusaur'},
-      {'name': 'ivysaur'},
+      {'name': 'ivysaur'}, 
       {'name': 'charmeleon'},
       {'name': 'charmander'},
       {'name': 'bulbasaur'} ])
   })
 })
-/*
+
 // estrese la funcion
-it('filter deberia retornar algo',()=>{
+it('Ordenar deberia retornar algo',()=>{
   // expect(filter('', data)).toBe(false)
-  expect(filter('',data)).toBeFalsy()
-  expect(filter('water', [])).toBeFalsy()
-})*/
+  expect(ordenar('', dataPokemon)).toBeFalsy()
+  expect(ordenar('water', [])).toBeFalsy()
+})
