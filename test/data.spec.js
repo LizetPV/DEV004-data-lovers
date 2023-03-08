@@ -90,7 +90,7 @@ describe('Ordenar', () => {
   // estrese la funcion
   it('ordenar deberia retornar los pokemones ordenados', () => {
     // expect(filter('', data)).toBe(false)
-    //expect(ordenar('', dataOrdenar)).toBeFalsy()
+    expect(ordenar('', dataOrdenar)).toBeFalsy()
     expect(ordenar('venusaur', [])).toBeFalsy()
   })
 })
