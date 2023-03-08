@@ -70,6 +70,21 @@ body {
         flex-wrap: wrap;
         width: 100%;
     }
+    .selectOrdenar {
+        background: #2f3640;
+        border-radius: 8px;
+        margin-boton: 8px;
+        color: #f5f6fa;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        width: 100px;
+    }      
+    .selectOrdenar .option {
+        height: 30px;
+        border-button: 8px;
+    }
 div {
     border-radius: 1rem;
     background-color: #FFE4C4;
