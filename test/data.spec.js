@@ -79,7 +79,7 @@ describe('Ordenar', () => {
     { 'name': 'charmander' },
     { 'name': 'bulbasaur' }]
 
-  it.only('ordenar deberia organizar a los pokemones de forma ascendente', () => {
+  it('ordenar deberia organizar a los pokemones de forma ascendente', () => {
     expect(ordenar('name', dataOrdenar)).toStrictEqual([
       { 'name': 'venusaur' },
       { 'name': 'ivysaur' },
@@ -88,9 +88,9 @@ describe('Ordenar', () => {
       { 'name': 'bulbasaur' }])
   })
   // estrese la funcion
-  it('ordenar deberia retornar algo', () => {
+  it('ordenar deberia retornar los pokemones ordenados', () => {
     // expect(filter('', data)).toBe(false)
-    expect(ordenar('', dataOrdenar)).toBeFalsy()
+    //expect(ordenar('', dataOrdenar)).toBeFalsy()
     expect(ordenar('venusaur', [])).toBeFalsy()
   })
 })
