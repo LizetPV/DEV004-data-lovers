@@ -1,11 +1,6 @@
 import dataPokemon from "./data/pokemon/pokemon.js";
-
 import { filter, ordenar } from "./data.js";
-
-
-
 const data = dataPokemon.pokemon;
-
 const divTarjeta = document.getElementById("dataHtml");
 const botonesHeader = document.querySelectorAll(".btn-header");
 const mostrarData = (pokemones) => {
@@ -18,8 +13,8 @@ const mostrarData = (pokemones) => {
     numbers.innerHTML = pokemon.num;
     const type = document.createElement("type");
     type.innerHTML = pokemon.type;
-    const image = document.createElement("img"); 
-    image.setAttribute("src", pokemon.img); 
+    const image = document.createElement("img");
+    image.setAttribute("src", pokemon.img);
     name.setAttribute("class", "name");
     image.setAttribute("class", "imagenPokemones");
     type.setAttribute("class", "typePokemon");

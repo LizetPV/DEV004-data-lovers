@@ -1,16 +1,11 @@
-
 function filterPokemonsByType() {
-
 }
-
 function filter(option, data){
   if(option === '' || data.length === 0){
     return false
   }
   return data.filter((poke) => poke.type.includes(option));
 }
-
-
 function ordenar(condicion, dataPokemon){
   if(condicion === '' || dataPokemon.length === 0){
     return false}
@@ -23,7 +18,6 @@ function ordenar(condicion, dataPokemon){
   });
   return ordenado;
 }
-
 export {
   filter,
   filterPokemonsByType,
