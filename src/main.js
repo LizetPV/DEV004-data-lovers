@@ -52,3 +52,11 @@ selectOrdenar.addEventListener("change", () => {
     mostrarData(dataOrdenadaAZ);
   }
 });
+
+data.forEach((botonTopTen) =>
+  botonTopTen.addEventListener("click", (event) => {
+    const botonTopTen = document.getElementById("divTop10");
+    //aquí debe ir el evento que va a llamar a los arrays que queremos sumar
+    //mostrar data
+  })
+);

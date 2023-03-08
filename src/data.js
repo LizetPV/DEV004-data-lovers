@@ -1,8 +1,4 @@
 
-function filterPokemonsByType() {
-
-}
-
 function filter(option, data){
   if(option === '' || data.length === 0){
     return false
@@ -24,8 +20,18 @@ function ordenar(condicion, dataPokemon){
   return ordenado;
 }
 
+function strongerPokemon(dataPokemon){
+  dataPokemon.sort(function(a,b){
+    return(a.stats['base-attack'] + a.stats['base-defense'] + a.stats['base-stamina']) - (b.stats['base-attack'] + b.stats['base-defense'] + b.stats['base-stamina']);
+  })
+}
+//aquí debe ir el cálculo
+//base attack + base defense + base stamina = promedio
+//ordenar los 10 pokemones desde el más fuerte al menos fuerte.
+
+
 export {
   filter,
-  filterPokemonsByType,
-  ordenar
+  ordenar,
+  strongerPokemon
 }
