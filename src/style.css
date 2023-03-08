@@ -10,7 +10,7 @@ button {
 
 body {
     background: linear-gradient(to right, #DA70D6, #FFFF00);
-    margin: 0;
+    margin: 0%;
     display: flexbox;
     cursor: url("https://cdn.custom-cursor.com/db/pointer/32/Pokemon_Pikachu_Pointer.png"), auto;
 }
@@ -29,7 +29,6 @@ main{
 }
 .img-container {
     text-align: center;
-    background-color: transparent;
     width: 90%;
     display: flexbox;
 }
