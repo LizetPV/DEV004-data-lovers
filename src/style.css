@@ -38,6 +38,7 @@ body {
     --Type-dragon: #FFA500;
     --Type-steel: #E0FFFF;
     --Type-fairy: #7CFC00;
+    --Type-topTen: #f7ecd3;
 }
 
 .nav {
@@ -241,4 +242,14 @@ h1 {
 .fairy {
     background-color: var(--Type-fairy);
     color: var(--clr-black);
+}
+.topTen{
+    background-color: var(--Type-topTen);
+    color: var(--clr-black);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.divTop10{
+    width: 100%;
+    background-color: transparent;
 }
