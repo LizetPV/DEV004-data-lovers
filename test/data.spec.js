@@ -80,25 +80,25 @@ describe('Ordenar', () => {
   })
   // comportamiento deseado de la funcion
   const dataOrdenar = [
-    {'name': 'venusaur'},
-    {'name': 'ivysaur'}, 
-    {'name': 'charmeleon'},   
-    {'name': 'charmander'}, 
-    {'name': 'bulbasaur'}]
+    { 'name': 'venusaur' },
+    { 'name': 'ivysaur' },
+    { 'name': 'charmeleon' },
+    { 'name': 'charmander' },
+    { 'name': 'bulbasaur' }]
 
   it.only('ordenar deberia organizar a los pokemones de forma ascendente', () => {
     expect(ordenar('name', dataOrdenar)).toStrictEqual([
-      {'name': 'venusaur'},
-      {'name': 'ivysaur'}, 
-      {'name': 'charmeleon'},
-      {'name': 'charmander'},
-      {'name': 'bulbasaur'} ])
+      { 'name': 'venusaur' },
+      { 'name': 'ivysaur' },
+      { 'name': 'charmeleon' },
+      { 'name': 'charmander' },
+      { 'name': 'bulbasaur' }])
+  })
+  // estrese la funcion
+  it('ordenar deberia retornar algo', () => {
+    // expect(filter('', data)).toBe(false)
+    expect(ordenar('', dataOrdenar)).toBeFalsy()
+    expect(ordenar('venusaur', [])).toBeFalsy()
   })
 })
-/*
-// estrese la funcion
-it('filter deberia retornar algo',()=>{
-  // expect(filter('', data)).toBe(false)
-  expect(filter('',data)).toBeFalsy()
-  expect(filter('water', [])).toBeFalsy()
-})*/
+
