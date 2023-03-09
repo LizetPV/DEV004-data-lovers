@@ -22,7 +22,7 @@ function ordenar(condicion, dataPokemon){
 
 function strongerPokemon(dataPokemon){
   dataPokemon.sort(function(a,b){
-    return(a.stats['base-attack'] + a.stats['base-defense'] + a.stats['base-stamina']) - (b.stats['base-attack'] + b.stats['base-defense'] + b.stats['base-stamina']);
+    return(parseInt(a.stats['base-attack'] + a.stats['base-defense'] + a.stats['base-stamina'])) - parseInt((b.stats['base-attack'] + b.stats['base-defense'] + b.stats['base-stamina']));
   })
 }
 //aquí debe ir el cálculo

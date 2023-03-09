@@ -21,7 +21,9 @@ body {
 }
 
 header{
-    display: flexbox;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
 }
 
 main{
@@ -31,13 +33,15 @@ main{
     text-align: center;
     width: 100%;
     display: flexbox;
+    box-sizing: border-box;
+    padding: 15px;
 }
 
 .imagenPokemones {
     /* imagen logo */
     padding-inline: 1rem;
     display: flexbox;
-    width: 80%;
+    width: 100%;
     max-width: 10rem;
     align-items: center;
 }
