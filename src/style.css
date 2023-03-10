@@ -12,12 +12,15 @@ body {
     display: flexbox;
     cursor: url("https://cdn.custom-cursor.com/db/pointer/32/Pokemon_Pikachu_Pointer.png"), auto;
 }
+
 .nav{
     display: flexbox;
     padding-inline: 1rem;
 }
 header{
-    display: flexbox;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
 }
 main{
     display: flexbox;
@@ -26,6 +29,9 @@ main{
     text-align: center;
     width: 100%;
     display: flexbox;
+    box-sizing: border-box;
+    /* text-align: center; */
+    padding: 15px;
 }
 .imagenPokemones {
     /* imagen logo */

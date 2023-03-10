@@ -37,13 +37,38 @@ botonesHeader.forEach((boton) =>
 );
 const selectOrdenar = document.getElementById("selectOrdenar");
 selectOrdenar.addEventListener("change", () => {
-  const dataOriginal = [...data]
+  const dataOriginal = [...data];
   const opcionElegida = selectOrdenar.value;
   if (opcionElegida === "all") {
     mostrarData(dataOriginal);
-  }
-  else {
+  } else {
     const dataOrdenadaAZ = ordenar(opcionElegida, dataOriginal);
     mostrarData(dataOrdenadaAZ);
   }
 });
+
+const pokemonesPromedio = data.map((pok)=>{
+  const fullName = pok.name;
+  const ataque = parseInt(pok.stats["base-attack"]);
+  const defense = parseInt(pok.stats["base-defense"]);
+  const stamina = parseInt(pok.stats["base-stamina"]);
+  const promedios = Math.round((ataque + defense + stamina) / 3);
+  const copiaPok = {...pok,num:promedios}
+  return copiaPok
+})
+
+console.log("3",pokemonesPromedio);
+const top10 = sortable
+  .sort(function (a, b) {
+    return b[1] - a[1];
+  })
+  .slice(0, 10);
+console.log(top10);
+
+boton.addEventListener("click", (event) => {
+  //const pokemones = event.currentTarget.value;
+  const pokemonesFuertes = document.getElementsByClassName("divTop10");
+  pokemones.innerHTML = "";
+  mostrarData(top10);
+});
+console.log(boton);
