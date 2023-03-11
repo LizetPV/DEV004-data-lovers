@@ -47,28 +47,45 @@ selectOrdenar.addEventListener("change", () => {
   }
 });
 
-const pokemonesPromedio = data.map((pok)=>{
+const pokemonesPromedio = data.map((pok) => {
   const fullName = pok.name;
   const ataque = parseInt(pok.stats["base-attack"]);
   const defense = parseInt(pok.stats["base-defense"]);
   const stamina = parseInt(pok.stats["base-stamina"]);
   const promedios = Math.round((ataque + defense + stamina) / 3);
-  const copiaPok = {...pok,num:promedios}
-  return copiaPok
-})
+  const copiaPok = { ...pok, num: promedios };
+  return copiaPok;
+});
 
-console.log("3",pokemonesPromedio);
-const top10 = sortable
+const top10 = pokemonesPromedio
   .sort(function (a, b) {
     return b[1] - a[1];
   })
   .slice(0, 10);
-console.log(top10);
 
-boton.addEventListener("click", (event) => {
-  //const pokemones = event.currentTarget.value;
-  const pokemonesFuertes = document.getElementsByClassName("divTop10");
-  pokemones.innerHTML = "";
-  mostrarData(top10);
+console.log(top10);
+const pokemonesFuertes = document.getElementById("divTop10");
+const result = document.getElementById("top10")
+pokemonesFuertes.addEventListener("click", () => {
+  result.innerHTML = "";
+  top10.forEach((pokemon) => {
+    const card = document.createElement("div");
+    const name = document.createElement("name");
+    name.innerHTML = pokemon.name;
+    const numbers = document.createElement("h1");
+    numbers.innerHTML = pokemon.num;
+    const type = document.createElement("type");
+    type.innerHTML = pokemon.type;
+    const image = document.createElement("img");
+    image.setAttribute("src", pokemon.img);
+    name.setAttribute("class", "name");
+    image.setAttribute("class", "imagenPokemones");
+    type.setAttribute("class", "typePokemon");
+    divTarjeta.appendChild(card);
+    card.appendChild(image);
+    card.appendChild(numbers);
+    card.appendChild(name);
+    card.appendChild(type);
+  });
 });
-console.log(boton);
+
