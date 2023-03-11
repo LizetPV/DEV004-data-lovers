@@ -1,11 +1,6 @@
 import dataPokemon from "./data/pokemon/pokemon.js";
-
 import { filter, ordenar } from "./data.js";
-
-
-
 const data = dataPokemon.pokemon;
-
 const divTarjeta = document.getElementById("dataHtml");
 const botonesHeader = document.querySelectorAll(".btn-header");
 const mostrarData = (pokemones) => {
@@ -18,8 +13,8 @@ const mostrarData = (pokemones) => {
     numbers.innerHTML = pokemon.num;
     const type = document.createElement("type");
     type.innerHTML = pokemon.type;
-    const image = document.createElement("img"); 
-    image.setAttribute("src", pokemon.img); 
+    const image = document.createElement("img");
+    image.setAttribute("src", pokemon.img);
     name.setAttribute("class", "name");
     image.setAttribute("class", "imagenPokemones");
     type.setAttribute("class", "typePokemon");
@@ -42,21 +37,38 @@ botonesHeader.forEach((boton) =>
 );
 const selectOrdenar = document.getElementById("selectOrdenar");
 selectOrdenar.addEventListener("change", () => {
-  const dataOriginal = [...data]
+  const dataOriginal = [...data];
   const opcionElegida = selectOrdenar.value;
   if (opcionElegida === "all") {
     mostrarData(dataOriginal);
-  }
-  else {
+  } else {
     const dataOrdenadaAZ = ordenar(opcionElegida, dataOriginal);
     mostrarData(dataOrdenadaAZ);
   }
 });
 
-data.forEach((botonTopTen)=>
-  botonTopTen.addEventListener("click", (event) => {
-    const botonTopTen = document.getElementById("divTop10");
-    //aquí debe ir el evento que va a llamar a los arrays que queremos sumar
-    //mostrar data
+const pokemonesPromedio = data.map((pok)=>{
+  const fullName = pok.name;
+  const ataque = parseInt(pok.stats["base-attack"]);
+  const defense = parseInt(pok.stats["base-defense"]);
+  const stamina = parseInt(pok.stats["base-stamina"]);
+  const promedios = Math.round((ataque + defense + stamina) / 3);
+  const copiaPok = {...pok,num:promedios}
+  return copiaPok
+})
+
+console.log("3",pokemonesPromedio);
+const top10 = sortable
+  .sort(function (a, b) {
+    return b[1] - a[1];
   })
-);
+  .slice(0, 10);
+console.log(top10);
+
+boton.addEventListener("click", (event) => {
+  //const pokemones = event.currentTarget.value;
+  const pokemonesFuertes = document.getElementsByClassName("divTop10");
+  pokemones.innerHTML = "";
+  mostrarData(top10);
+});
+console.log(boton);

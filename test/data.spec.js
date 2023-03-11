@@ -60,38 +60,41 @@ describe('Filter', () => {
     expect(filter('', data)).toBeFalsy()
     expect(filter('water', [])).toBeFalsy()
   })
-
 });
-
-
-
-// Pruebas unitarias para "ordenar"
+// describe('anotherExample', () => {
+//   it('is a function', () => {
+//     expect(typeof anotherExample).toBe('function');
+//   });
+//   it('returns `anotherExample`', () => {
+//     expect(anotherExample()).toBe('OMG');
+//   });
+// });
 describe('Ordenar', () => {
   // funcion existe
   it('Ordenar los pokemones alfabéticamente Ascendente', () => {
     expect(typeof ordenar).toBe('function')
   })
   // comportamiento deseado de la funcion
-  const dataOrdenar = [
-    { 'name': 'venusaur' },
-    { 'name': 'ivysaur' },
-    { 'name': 'charmeleon' },
-    { 'name': 'charmander' },
-    { 'name': 'bulbasaur' }]
+  const dataPokemon = [
+    {'name': 'venusaur'},
+    {'name': 'ivysaur'}, 
+    {'name': 'charmeleon'},   
+    {'name': 'charmander'}, 
+    {'name': 'bulbasaur'}]
 
   it('ordenar deberia organizar a los pokemones de forma ascendente', () => {
-    expect(ordenar('name', dataOrdenar)).toStrictEqual([
-      { 'name': 'venusaur' },
-      { 'name': 'ivysaur' },
-      { 'name': 'charmeleon' },
-      { 'name': 'charmander' },
-      { 'name': 'bulbasaur' }])
-  })
-  // estrese la funcion
-  it('ordenar deberia retornar los pokemones ordenados', () => {
-    // expect(filter('', data)).toBe(false)
-    expect(ordenar('', dataOrdenar)).toBeFalsy()
-    expect(ordenar('venusaur', [])).toBeFalsy()
+    expect(ordenar('name', dataPokemon)).toStrictEqual([
+      {'name': 'venusaur'},
+      {'name': 'ivysaur'}, 
+      {'name': 'charmeleon'},
+      {'name': 'charmander'},
+      {'name': 'bulbasaur'} ])
   })
 })
 
+// estrese la funcion
+it('Ordenar deberia retornar algo',()=>{
+  // expect(filter('', data)).toBe(false)
+  expect(ordenar('', dataPokemon)).toBeFalsy()
+  expect(ordenar('water', [])).toBeFalsy()
+})
