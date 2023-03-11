@@ -233,3 +233,6 @@ h1 { /* texto dentro de la tarjeta pokemon */
     width: 100%;
     background-color: transparent;
 }
+#top10{
+    opacity: 0;
+}
