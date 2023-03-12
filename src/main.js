@@ -48,22 +48,22 @@ selectOrdenar.addEventListener("change", () => {
 });
 
 const pokemonesPromedio = data.map((pok) => {
-  const fullName = pok.name;
   const ataque = parseInt(pok.stats["base-attack"]);
   const defense = parseInt(pok.stats["base-defense"]);
   const stamina = parseInt(pok.stats["base-stamina"]);
   const promedios = Math.round((ataque + defense + stamina) / 3);
-  const copiaPok = { ...pok, num: promedios };
+  const copiaPok = { ...pok, power: promedios };
   return copiaPok;
 });
 
 const top10 = pokemonesPromedio
   .sort(function (a, b) {
-    return b[1] - a[1];
+    return b.power - a.power;
   })
   .slice(0, 10);
+console.log("1",top10);
 
-console.log(top10);
+
 const pokemonesFuertes = document.getElementById("divTop10");
 const result = document.getElementById("top10")
 pokemonesFuertes.addEventListener("click", () => {
