@@ -20,18 +20,6 @@ function ordenar(condicion, dataPokemon) {
   return ordenado;
 }
 
-// function pokemonesPromedio(data) {
-//   let copiaPok;
-//   data.forEach((pok) => {
-//     const ataque = parseInt(pok.stats["base-attack"]);
-//     const defense = parseInt(pok.stats["base-defense"]);
-//     const stamina = parseInt(pok.stats["base-stamina"]);
-//     const promedios = Math.round((ataque + defense + stamina) / 3);
-//     copiaPok = { ...pok, power: promedios };
-//   })
-//   return copiaPok;
-// }
-
 function pokemonesPromedio(data) {
   const arrayPromedio = data.map((pok) => {
     const ataque = parseInt(pok.stats["base-attack"]);
