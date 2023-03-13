@@ -20,20 +20,9 @@ function ordenar(condicion, dataPokemon) {
   return ordenado;
 }
 
-function pokemonesPromedio(data) {
-  let copiaPok;
-  data.forEach((pok) => {
-    const ataque = parseInt(pok.stats["base-attack"]);
-    const defense = parseInt(pok.stats["base-defense"]);
-    const stamina = parseInt(pok.stats["base-stamina"]);
-    const promedios = Math.round((ataque + defense + stamina) / 3);
-    copiaPok = { ...pok, power: promedios };
-  })
-  return copiaPok;
-}
 
 
 //aquí debe ir el cálculo
 //base attack + base defense + base stamina = promedio
 //ordenar los 10 pokemones desde el más fuerte al menos fuerte.
-export { filter, ordenar, pokemonesPromedio };
+export { filter, ordenar };
