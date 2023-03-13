@@ -1,5 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
-import { filter, pokemonesPromedio } from "../src/data.js";
+import { filter, ordenar, pokemonesPromedio } from "../src/data.js";
 
 
 // Pruebas unitarias para el "filter"
@@ -69,7 +69,7 @@ describe('Filter', () => {
 //     expect(anotherExample()).toBe('OMG');
 //   });
 // });
-/*describe('Ordenar', () => {
+describe('Ordenar', () => {
   // funcion existe
   it('Ordenar los pokemones alfabéticamente Ascendente', () => {
     expect(typeof ordenar).toBe('function')
@@ -97,21 +97,21 @@ it('Ordenar deberia retornar algo', () => {
   // expect(filter('', data)).toBe(false)
   expect(ordenar('', dataPokemon)).toBeFalsy()
   expect(ordenar('water', [])).toBeFalsy()
-})*/
+})
 
 
 describe('pokemonesPromedio', () => {
   it('calcula correctamente el promedio y ordena los pokemones', () => {
-    expect(pokemonesPromedio(data)).toEqual(resultadoEsperado);
+    expect(pokemonesPromedio(data)).toBe(resultadoEsperado);
   })
   const data = [
-    {"num": "001", "name": "bulbasaur", "stats": {"base-attack": "118", "base-defense": "111", "base-stamina": "128" } },
-    {"num": "002", "name": "ivysaur","stats": {"base-attack": "151","base-defense": "143", "base-stamina": "155"}},
-    {"num": "003", "name": "venusaur","stats": {"base-attack": "198","base-defense": "189","base-stamina": "190"}}
+    {"num": "001", "name": "bulbasaur", "stats": {"base-attack": "118", "base-defense": "111", "base-stamina": "128"}, "power": 119},
+    {"num": "002", "name": "ivysaur","stats": {"base-attack": "151","base-defense": "143", "base-stamina": "155"}, "power": 150},
+    {"num": "003", "name": "venusaur","stats": {"base-attack": "198","base-defense": "189","base-stamina": "190"}, "power": 192}
   ]
   const resultadoEsperado = [
-    {"num": "001", "name": "bulbasaur", "stats": {"base-attack": "118", "base-defense": "111", "base-stamina": "128" } },
-    {"num": "002", "name": "ivysaur","stats": {"base-attack": "151","base-defense": "143", "base-stamina": "155"}},
-    {"num": "003", "name": "venusaur","stats": {"base-attack": "198","base-defense": "189","base-stamina": "190"}}
+    {"num": "001", "name": "bulbasaur", "stats": {"base-attack": "118", "base-defense": "111", "base-stamina": "128"}, "power": 119},
+    {"num": "002", "name": "ivysaur","stats": {"base-attack": "151","base-defense": "143", "base-stamina": "155"}, "power": 150},
+    {"num": "003", "name": "venusaur","stats": {"base-attack": "198","base-defense": "189","base-stamina": "190"}, "power": 192}
   ]
 })

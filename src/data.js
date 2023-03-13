@@ -27,6 +27,7 @@ function pokemonesPromedio(data) {
     const averages = Math.round((ataque + defense + stamina) / 3); // promedio
     const copiaPok = { ...pok, power: averages };
     arrayPromedio.push(copiaPok);
+    console.log("1",arrayPromedio)
   });
 
   arrayPromedio.sort((a, b) => b.power - a.power); //Ordena los pokemones
