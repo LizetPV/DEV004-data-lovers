@@ -52,7 +52,6 @@ const top10 = pokemonesPromedio(data)
     return b.power - a.power;
   })
   .slice(0, 10);
-console.log("1", top10);
 
 const pokemonesFuertes = document.getElementById("divTop10");
 const result = document.getElementById("top10");

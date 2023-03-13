@@ -5,7 +5,6 @@ function filter(option, data) {
   return data.filter((poke) => poke.type.includes(option));
 }
 
-
 function ordenar(condicion, dataPokemon) {
   if (condicion === "" || dataPokemon.length === 0) {
     return false;
@@ -31,7 +30,6 @@ function pokemonesPromedio(data) {
   });
   return arrayPromedio;
 }
-
 
 //aquí debe ir el cálculo
 //base attack + base defense + base stamina = promedio
