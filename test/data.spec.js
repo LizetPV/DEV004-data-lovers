@@ -1,7 +1,5 @@
 //import { example, anotherExample } from '../src/data.js';
 import { filter, ordenar, pokemonesPromedio } from "../src/data.js";
-
-
 // Pruebas unitarias para el "filter"
 describe('Filter', () => {
   //1° criterio para las pruebas: la función existe
@@ -81,7 +79,6 @@ describe('Ordenar', () => {
     { 'name': 'charmeleon' },
     { 'name': 'charmander' },
     { 'name': 'bulbasaur' }]
-
   it('ordenar deberia organizar a los pokemones de forma ascendente', () => {
     expect(ordenar('name', dataPokemon)).toStrictEqual([
       { 'name': 'venusaur' },
@@ -91,15 +88,12 @@ describe('Ordenar', () => {
       { 'name': 'bulbasaur' }])
   })
 })
-
 // estrese la funcion
 it('Ordenar deberia retornar algo', () => {
   // expect(filter('', data)).toBe(false)
   expect(ordenar('', dataPokemon)).toBeFalsy()
   expect(ordenar('water', [])).toBeFalsy()
 })
-
-
 describe('pokemonesPromedio', () => {
   it('calcula correctamente el promedio y ordena los pokemones', () => {
     expect(pokemonesPromedio(data)).toBe(resultadoEsperado);

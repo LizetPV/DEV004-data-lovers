@@ -17,7 +17,6 @@ function ordenar(condicion, dataPokemon) {
   });
   return ordenado;
 }
-
 function pokemonesPromedio(data) {
   const arrayPromedio = [];
   data.map((pok) => {
@@ -29,11 +28,8 @@ function pokemonesPromedio(data) {
     arrayPromedio.push(copiaPok);
     console.log("1",arrayPromedio)
   });
-
   arrayPromedio.sort((a, b) => b.power - a.power); //Ordena los pokemones
   const cortarArray = arrayPromedio.slice(0, 10); //Cortar top 10
-
   return cortarArray;
 }
-
 export { filter, ordenar, pokemonesPromedio };
