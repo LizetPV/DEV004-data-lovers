@@ -47,13 +47,7 @@ selectOrdenar.addEventListener("change", () => {
   }
 });
 
-const top10 = pokemonesPromedio(data)
-  .sort(function (a, b) {
-    return b.power - a.power;
-  })
-  .slice(0, 10);
-
-console.log("1", top10);
+const top10 = pokemonesPromedio(data)  
 const pokemonesFuertes = document.getElementById("divTop10");
 const result = document.getElementById("top10");
 pokemonesFuertes.addEventListener("click", () => {
