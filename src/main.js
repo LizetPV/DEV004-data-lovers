@@ -1,5 +1,5 @@
 import dataPokemon from "./data/pokemon/pokemon.js";
-import { filter, ordenar } from "./data.js";
+import { filter, ordenar, pokemonesPromedio } from "./data.js";
 const data = dataPokemon.pokemon;
 const divTarjeta = document.getElementById("dataHtml");
 const botonesHeader = document.querySelectorAll(".btn-header");
@@ -47,16 +47,17 @@ selectOrdenar.addEventListener("change", () => {
   }
 });
 
-const pokemonesPromedio = data.map((pok) => {
-  const ataque = parseInt(pok.stats["base-attack"]);
-  const defense = parseInt(pok.stats["base-defense"]);
-  const stamina = parseInt(pok.stats["base-stamina"]);
-  const promedios = Math.round((ataque + defense + stamina) / 3);
-  const copiaPok = { ...pok, power: promedios };
-  return copiaPok;
-});
+// const pokemonesPromedio = data.map((pok) => {
+//   const ataque = parseInt(pok.stats["base-attack"]);
+//   const defense = parseInt(pok.stats["base-defense"]);
+//   const stamina = parseInt(pok.stats["base-stamina"]);
+//   const averages = Math.round((ataque + defense + stamina) / 3); // promedio
+//   const copiaPok = { ...pok, power: averages };
+//   return copiaPok;
+// });
+console.log("0",pokemonesPromedio(data));
 
-const top10 = pokemonesPromedio
+const top10 = pokemonesPromedio(data)
   .sort(function (a, b) {
     return b.power - a.power;
   })
