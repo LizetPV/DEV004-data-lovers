@@ -8,6 +8,7 @@
 * [4. Funciones utilizadas](#4-Funciones-utilizadas)
 * [5. Como utilizar](#5-como-utilizar)
 * [6. Pruebas](#6-Pruebas)
+* [7. Historias de usuario](#7-PHistorias-de-usuario)
 * [7. Historias de Usuario](#7-Historias de usuario)
 * [8. Prototipo de baja y alta fidelidad](#8-Prototipo-de-baja-y-alta-fidelidad)
 
