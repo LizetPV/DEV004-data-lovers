@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function filter(option, data) {
   if (option === "" || data.length === 0) {
     return false;
@@ -34,18 +33,3 @@ function pokemonesPromedio(data) {
   return cortarArray;
 }
 export { filter, ordenar, pokemonesPromedio };
-=======
-/*// estas funciones son de ejemplo
-
-export const pokemon = ( ) => {
-  return 'pokemon';
-};
-
-//export const anotherExample = () => {
-  //return 'OMG';
-//};*/
-
-export function filterPokemonsByType() {
- 
-}
->>>>>>> main
