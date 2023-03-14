@@ -170,7 +170,6 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 [![prototipo-de-baja-fidelidad.jpg](https://i.postimg.cc/13sxvycm/prototipo-de-baja-fidelidad.jpg)](https://postimg.cc/QH4ntGyw)
 
 
-jkjfkjfkjgjg
 
 
   ### Prototipo de alta fidelidad:
