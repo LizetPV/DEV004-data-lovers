@@ -100,10 +100,12 @@ Yo como usuario nuevo, quiero poder ver la lista de pokemones y poder filtrarlo 
 
 * Que este desplegado en git hub.
 
-- Investigar cómo agregar un filtro a nuestra base de datos.
-- Implementar el filtro por tipo de cada pokemon
--  Prototipo de alta fidelidad: boceto de balsemiq
--  
+#### `Tareas:`
+
+* [ ] Investigar cómo agregar un filtro a nuestra base de datos.
+* [ ] Implementar el filtro por tipo de cada pokemon
+* [ ] Prototipo de alta fidelidad: boceto de balsemiq
+
 ## Historia de usuario 3:
 
 Yo como usuario nuevo, quiero poder visualizar la lista de pokemones, asi como tambirn tener dos tipos de filtros por tipo de pokemon y por orden de la lista en forma ascendente y descendente.
@@ -118,9 +120,9 @@ Yo como usuario nuevo, quiero poder visualizar la lista de pokemones, asi como t
 
 * Que este desplegado en git hub.
 
-- Crear función que permita ordenar los nombres de los pokemones desde la A-Z y desde la Z-A.
-- Ordenar el código, mejorar estilos de la página.
--  Escribir una prueba unitaria para la función filtro y ordenamiento.
+* [ ] Crear función que permita ordenar los nombres de los pokemones desde la A-Z y desde la Z-A.
+* [ ] Ordenar el código, mejorar estilos de la página.
+* [ ]  Escribir una prueba unitaria para la función filtro y ordenamiento.
 
 ## Historia de usuario 4:
 
@@ -142,11 +144,11 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 
 *Readme redactado y terminado.
 
-- Crear un cálculo que nos permita mostrar los 10 mejores pokemones en fuerza.
-- Hacer un calculo utilizando un bucle que recorra todo el array y/o objeto.
--  Darle la funcionalidad al código del cálculo.
--  Mostrar al usuario los 10 pokemones más fuertes.
-- correr los test unitarios.
+* [ ] Crear un cálculo que nos permita mostrar los 10 mejores pokemones en fuerza.
+* [ ] Hacer un calculo utilizando un bucle que recorra todo el array y/o objeto.
+* [ ] Darle la funcionalidad al código del cálculo.
+* [ ]  Mostrar al usuario los 10 pokemones más fuertes.
+* [ ] correr los test unitarios.
 
 ## 8. Diseño de interfaz del usuario
 
