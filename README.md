@@ -5,12 +5,11 @@
 * [1. Resumen](#1-Resumen)
 * [2. funcionalidades](#2-Funcionalidades)
 * [3. Tecnologias utilizadas](#3-Tecnologias-utilizadas)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Consideraciones técnicas](#7-consideraciones-técnicas)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
-* [9. Checklist](#9-checklist)
+* [4. Funciones utilizadas](#4-Funciones-utilizadas)
+* [5. Como utilizar](#5-como-utilizar)
+* [6. Pruebas](#6-Pruebas)
+* [7. Historias de Usuario](#7-Historias de usuario)
+* [8. Prototipo de baja y alta fidelidad](#8-Prototipo-de-baja-y-alta-fidelidad)
 
 ***
 
@@ -58,7 +57,7 @@ Las pruebas unitarias cubren un mínimo del 70% de statements, functions, lines 
 
 Yo como usuario nuevo, quiero poder ver la lista de todos los pokemones para conocer el poder de los pokemones.
 
-## Criterios de aceptación:
+### `Criterios de aceptación:`
 
 * Que sea visible  la lista de pokemones.
 
@@ -66,7 +65,7 @@ Yo como usuario nuevo, quiero poder ver la lista de todos los pokemones para con
 
 * Que cuando pase el mouse la ficha se gire y se vea la informacion del pokemon.
 
-## Definición de terminado:
+### `Definición de terminado:`
 
 * Que debe pasar correctamente los test.
 
@@ -79,88 +78,77 @@ Yo como usuario nuevo, quiero poder ver la lista de todos los pokemones para con
 -Diseño en CSS: fondo, colores, etc.
 -Que sea responsive.
 
+## Historia de usuario 2:
 
-### `src/index.html`
+Yo como usuario nuevo, quiero poder ver la lista de pokemones y poder filtrarlo por tipo de cada pokemon.
 
-Como en el proyecto anterior, existe un archivo `index.html`. Como ya sabes,
-acá va la página que se mostrará al usuario. También nos sirve para indicar
-qué scripts se usarán y unir todo lo que hemos hecho.
+### `Criterios de aceptación:`
 
-### `src/main.js`
+* Que sea visible  la lista de pokemones.
 
-Recomendamos usar `src/main.js` para todo tu código que tenga que ver con
-mostrar los datos en la pantalla. Con esto nos referimos básicamente a la
-interacción con el DOM. Operaciones como creación de nodos, registro de
-manejadores de eventos (_event listeners_ o _event handlers_), ....
+* Que sea responsive
 
-Esta no es la única forma de dividir tu código, puedes usar más archivos y
-carpetas, siempre y cuando la estructura sea clara para tus compañeras.
+* Que tenga botones de filtro por tipo de cada pokemon.
 
-En este archivo encontrarás una serie de _imports_ _comentados_. Para _cargar_
-las diferentes fuentes de datos tendrás que _descomentar_ la línea
-correspondiente.
+* Prototipo de alta fidelidad.
 
-Por ejemplo, si "descomentamos" la siguiente línea:
+### `Definición de terminado:`
 
-```js
-// import data from './data/lol/lol.js';
-```
+* Que debe pasar correctamente los test.
 
-La línea quedaría así:
+* Que dos usuarios nos den feedback.
 
-```js
-import data from './data/lol/lol.js';
-```
+* Que este desplegado en git hub.
 
-Y ahora tendríamos la variable `data` disponible en el script `src/main.js`.
+- Investigar cómo agregar un filtro a nuestra base de datos.
+- Implementar el filtro por tipo de cada pokemon
+-  Prototipo de alta fidelidad: boceto de balsemiq
+-  
+## Historia de usuario 3:
 
-### `src/data.js`
+Yo como usuario nuevo, quiero poder visualizar la lista de pokemones, asi como tambirn tener dos tipos de filtros por tipo de pokemon y por orden de la lista en forma ascendente y descendente.
 
-El corazón de este proyecto es la manipulación de datos a través de arreglos
-y objetos.
+### `Criterios de aceptación:`
 
-Te recomendamos que este archivo contenga toda la funcionalidad que corresponda
-a obtener, procesar y manipular datos (tus funciones). Por ejemplo:
+* Que sea visible la lista de pokemones y que se pueda tener el filtro de ordenar de ascendente y descenden.
 
-* `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+### `Definición de terminado:`
 
-* `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
-  El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
-  la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
+* Que debe pasar correctamente los test.
 
-* `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
-  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
-  proporcionada.
+* Que este desplegado en git hub.
 
-Estos nombres de funciones y de parámetros son solamente referenciales, lo que
-decidas depende de tu propia implementación.
+- Crear función que permita ordenar los nombres de los pokemones desde la A-Z y desde la Z-A.
+- Ordenar el código, mejorar estilos de la página.
+-  Escribir una prueba unitaria para la función filtro y ordenamiento.
 
-Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
-e independientes del DOM. Estas funciones serán después usadas desde el archivo
-`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
-filtrado, ordenado, ...).
+## Historia de usuario 4:
 
-### `src/data`
+Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemones mas fuertes.
 
-En esta carpeta están los datos de las diferentes fuentes. Encontrarás una
-carpeta por cada fuente, y dentro de cada carpeta dos archivos: uno con la
-extensión `.js` y otro `.json`. Ambos archivos contienen la misma data; la
-diferencia es que el `.js` lo usaremos a través de una etiqueta `<script>`,
-mientras que el `.json` está ahí para opcionalmente cargar la data de forma
-asíncrona con [`fetch()`](https://developer.mozilla.org/es/docs/Web/API/Fetch_API)
-(ver sección de [_Parte Opcional_](#6-hacker-edition)).
+### `Criterios de aceptación:`
 
-### `test/data.spec.js`
+* Que sea visible la lista de pokemones.
+* Crear una funcion de calculo basica para sacar el promedio de los pokemones mas fuertes.
+* Se debe mostrar unicamente 10 pokemones mas fuertes.
 
-Tendrás también que completar las pruebas unitarias de las funciones
-implementadas en el archivo `data.js`.
+### `Definición de terminado:`
 
-## 8. Pistas, tips y lecturas complementarias
+* Que debe pasar correctamente los test.
+
+* Que este desplegado en git hub.
+
+* Debe pasar los test unitarios al 100%
+
+*Readme redactado y terminado.
+
+- Crear un cálculo que nos permita mostrar los 10 mejores pokemones en fuerza.
+- Hacer un calculo utilizando un bucle que recorra todo el array y/o objeto.
+-  Darle la funcionalidad al código del cálculo.
+-  Mostrar al usuario los 10 pokemones más fuertes.
+- correr los test unitarios.
+
+## 8. Diseño de interfaz del usuario
 
 ### Primeros pasos
 
@@ -178,70 +166,4 @@ pueden ayudar:
   solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
   pistas en la guía de organización para el proyecto.
 
-Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
-
-1. Una de las integrantes del equipo debe realizar un :fork_and_knife:
-   [fork](https://help.github.com/articles/fork-a-repo/) del repo de tu cohort,
-   tus _coaches_ te compartirán un _link_ a un repo y te darán acceso de lectura
-   en ese repo. La otra integrante del equipo deber hacer un fork **del
-   repositorio de su compañera** y
-   [configurar](https://gist.github.com/BCasal/026e4c7f5c71418485c1) un `remote`
-   hacia el mismo.
-2. :arrow_down: [Clona](https://help.github.com/articles/cloning-a-repository/)
-   tu _fork_ a tu computadora (copia local).
-3. 📦 Instala las dependencias del proyecto con el comando `npm install`. Esto
-   asume que has instalado [Node.js](https://nodejs.org/) (que incluye [npm](https://docs.npmjs.com/)).
-4. Si todo ha ido bien, deberías poder ejecutar las :traffic_light:
-   pruebas unitarias (unit tests) con el comando `npm test`.
-5. Para ver la interfaz de tu programa en el navegador, usa el comando
-  `npm start` para arrancar el servidor web y dirígete a
-  `http://localhost:5000` en tu navegador.
-6. A codear se ha dicho! :rocket:
-
-### Contenido de referencia
-
-#### Diseño de experiencia de usuario (User Experience Design)
-
-* Investigación con usuarios / entrevistas
-* Principios de diseño visual
-
-#### Desarrollo Front-end
-
-* Unidad de testing en curso de JavaScript en LMS.
-* Unidad de arreglos en curso de JavaScript en LMS.
-* Unidad de objetos en curso de JavaScript en LMS.
-* Unidad de funciones en curso de JavaScript en LMS.
-* Unidad de DOM en curso de Browser JavaScript en LMS.
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expresión vs sentencia](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [datos atómicos vs datos estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-
-#### Herramientas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-#### Organización del Trabajo
-
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
-
-
+## 8. Prototipo de baja y alta fidelidad:
