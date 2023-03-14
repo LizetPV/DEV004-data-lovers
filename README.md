@@ -165,7 +165,7 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 ## 8. Diseño de interfaz del usuario
 
 ### Prototipo de baja fidelidad:
-<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="220px">
+[![prototipo-de-baja-fidelidad.jpg](https://i.postimg.cc/13sxvycm/prototipo-de-baja-fidelidad.jpg)](https://postimg.cc/QH4ntGyw)
 <br/>
  <br/>
  <br/>
