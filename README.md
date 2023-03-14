@@ -1,4 +1,14 @@
-# Readme
+# Proyecto dataLovers - Laboratoria
+<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="220px">
+<br/>
+ <br/>
+ <br/>
+ <b>Autora</b>
+<br/>
+Yesenia- Peche Vergaray y Genesis Voiser / https://github.com/LizetPV
+<p align="center">
+       </summary>
+<br/>
 
 ## Índice
 
