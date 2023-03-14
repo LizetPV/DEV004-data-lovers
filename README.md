@@ -170,10 +170,9 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 [![prototipo-de-baja-fidelidad.jpg](https://i.postimg.cc/13sxvycm/prototipo-de-baja-fidelidad.jpg)](https://postimg.cc/QH4ntGyw)
 
 
-jkjfkjfkjgjg
 
 
   ### Prototipo de alta fidelidad:
   
-[![Whats-App-Image-2023-03-13-at-5-40-47-PM.jpg](https://i.postimg.cc/Cx7KNP82/Whats-App-Image-2023-03-13-at-5-40-47-PM.jpg)](https://postimg.cc/RW39CTX1)
+[![Whats-App-Image-2023-03-13-at-5-46-00-PM.jpg](https://i.postimg.cc/m2NdmCgq/Whats-App-Image-2023-03-13-at-5-46-00-PM.jpg)](https://postimg.cc/rKsCmdWC)
 
