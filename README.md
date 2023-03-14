@@ -175,5 +175,5 @@ jkjfkjfkjgjg
 
   ### Prototipo de alta fidelidad:
   
-[![Captura.png](https://i.postimg.cc/qvmXhG1s/Captura.png)](https://postimg.cc/QFTWvcGC)
+[![Captura.png](https://i.postimg.cc/FK5cJnjJ/Captura.png)](https://postimg.cc/ZWH0GHsT)
 
