@@ -162,20 +162,16 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 * [ ]  Mostrar al usuario los 10 pokemones más fuertes.
 * [ ] correr los test unitarios.
 
+[![Whats-App-Image-2023-03-13-at-5-38-18-PM.jpg](https://i.postimg.cc/MpSctfFn/Whats-App-Image-2023-03-13-at-5-38-18-PM.jpg)](https://postimg.cc/VdKLkv1w)
+
 ## 8. Diseño de interfaz del usuario
 
 ### Prototipo de baja fidelidad:
 [![prototipo-de-baja-fidelidad.jpg](https://i.postimg.cc/13sxvycm/prototipo-de-baja-fidelidad.jpg)](https://postimg.cc/QH4ntGyw)
-<br/>
- <br/>
- <br/>
- <b>Autora</b>
-<br/>
-Yesenia- Peche Vergaray y Genesis Voiser / https://github.com/LizetPV
-<p align="center">
-       </summary>
-<br/>
+jkjfkjfkjgjg
+
 
   ### Prototipo de alta fidelidad:
-
+  
+[![Whats-App-Image-2023-03-13-at-5-40-47-PM.jpg](https://i.postimg.cc/Cx7KNP82/Whats-App-Image-2023-03-13-at-5-40-47-PM.jpg)](https://postimg.cc/RW39CTX1)
 
