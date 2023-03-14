@@ -1,20 +1,45 @@
-ul{
+ul {
     list-style-type: none;
+    display: flexbox;
 }
-
 button {
     border: 0;
+    display: flexbox;
 }
-
 body {
     background: linear-gradient(to right, #DA70D6, #FFFF00);
-    margin: 0;
+    margin: 0%;
+    display: flexbox;
+    cursor: url("https://cdn.custom-cursor.com/db/pointer/32/Pokemon_Pikachu_Pointer.png"), auto;
 }
-
+.nav{
+    display: flexbox;
+    padding-inline: 1rem;
+}
+header{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+}
+main{
+    display: flexbox;
+}
 .img-container {
     text-align: center;
-  }
-
+    width: 100%;
+    display: flexbox;
+    box-sizing: border-box;
+    /* text-align: center; */
+    padding: 15px;
+}
+.imagenPokemones {
+    /* imagen logo */
+    padding-inline: 1rem;
+    display: flexbox;
+    width: 100%;
+    max-width: 10rem;
+    align-items: center;
+}
 :root {
     --clr-black: #1C1C1C;
     --clr-gray: #FFC300;
@@ -38,22 +63,16 @@ body {
     --Type-dragon: #FFA500;
     --Type-steel: #E0FFFF;
     --Type-fairy: #7CFC00;
+    --Type-topTen: #F7ECD3;
 }
-
-.nav { /* botones de tipo pokemon*/
-    display: flex;
-    padding-inline: 1rem;
-}
-
-.nav-list { /* botones de tipo pokemon*/
+.nav-list {     /* disposición de los botones "tipo pokemon" */
     display: flex;
     flex-wrap: wrap;
     gap: 5%;
     padding-block: 2ram;
     align-content: center;
 }
-
-.btn-header { /* diseño de los botones de tipo pokemon*/
+.btn-header {   /* diseño de los botones de tipo pokemon*/
     padding: .8rem;
     border-radius: 50vmax;
     cursor: pointer;
@@ -62,170 +81,157 @@ body {
     transition: .2s;
     border: 3px solid rgb(100, 68, 32);
     margin: 1px;
+    cursor: url("https://cdn.custom-cursor.com/db/11281/32/pokemon-ditto-pointer.png"), auto;
 }
-
-.btn-header:hover{
+.btn-header:hover { /* dan efecto a los botones al pasar el cursor sobre ellos */
     transform: scale(1.1);
-    box-shadow: 0 0 2rem rgba(black, 0 ,0,.25);
-    }
-    #data {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        background: #FFE4C4;
-        background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
-        background: linear-gradient(to right, #DA70D6, #FFFF00);
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-div {
+    box-shadow: 0 0 2rem rgba(black, 0, 0, .25);
+}
+#dataHtml { /* da estructura a la página HTML */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FFE4C4;
+    background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
+    background: linear-gradient(to right, #DA70D6, #FFFF00);
+    flex-wrap: wrap;
+    width: 100%;
+}
+.selectOrdenar { /* Diseño para el botón seleccionar A-Z y Z-A */
+    background: #2F3640;
+    border-radius: 8px;
+    color: #F5F6FA;
+    border: none;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 100px;
+}
+.selectOrdenar .option { /* tamaño botón opción */
+    height: 30px;
+}
+div { /* div tarjeta de fondo del pokemon */
     border-radius: 1rem;
     background-color: #FFE4C4;
     padding-block: 1rem;
     text-transform: uppercase;
     margin: 15px;
 }
-
-h1 {
+h1 { /* texto dentro de la tarjeta pokemon */
     transform: translateY(-50%);
     color: var(--clr-gray);
     display: flex;
     justify-content: center;
 }
-
-.imagenPokemones { /* imagen logo */
-    padding-inline: 1rem;
-    display: flex;
-    width: 80%;
-    max-width: 10rem;
-}
-
-.name {
+.name { /* Nombre del pokemon*/
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
-
-.typePokemon {
+.typePokemon { /* Diseño del tipo de pokemon */
     border-radius: 100vmax;
     display: flex;
     font-size: .75rem;
     justify-content: center;
     padding: .25rem .5rem;
-    background-color: #c3c600;
+    background-color: #C3C600;
 }
-
 .pokemon-stats {
     display: flex;
     gap: 1rem;
     font-size: .85rem;
 }
-
 .stats {
     background-color: var(--clr-gray);
     padding: .25rem .5rem;
     border-radius: 100vmax;
 }
-
 .ver {
     background-color: var(--Type-ver);
     color: var(--clr-black)
 }
-
 .normal {
     background-color: var(--Type-normal);
     color: var(--clr-black);
 }
-
 .fire {
     background-color: var(--Type-fire);
     color: var(--clr-black)
 }
-
 .water {
     background-color: var(--Type-water);
     color: var(--clr-black)
 }
-
 .grass {
     background-color: var(--Type-grass);
     color: var(--clr-black)
 }
-
 .electric {
     background-color: var(--Type-electric);
     color: var(--clr-black)
 }
-
 .ice {
     background-color: var(--Type-ice);
     color: var(--clr-black)
 }
-
 .fighting {
     background-color: var(--Type-fighting);
     color: var(--clr-black)
 }
-
 .poison {
     background-color: var(--Type-poison);
     color: var(--clr-black)
 }
-
 .ground {
     background-color: var(--Type-ground);
     color: var(--clr-black)
 }
-
 .flying {
     background-color: var(--Type-flying);
     color: var(--clr-black)
 }
-
 .psychic {
     background-color: var(--Type-psychic);
     color: var(--clr-black)
 }
-
 .bug {
     background-color: var(--Type-bug);
     color: var(--clr-black)
 }
-
 .rock {
     background-color: var(--Type-rock);
     color: var(--clr-black)
 }
-
 .ghost {
     background-color: var(--Type-ghost);
     color: var(--clr-black)
 }
-
 .dark {
     background-color: var(--Type-dark);
     color: var(--clr-black)
 }
-
 .dragon {
     background-color: var(--Type-dragon);
     color: var(--clr-black)
 }
-
 .steel {
     background-color: var(--Type-steel);
     color: var(--clr-black)
 }
-
 .fairy {
     background-color: var(--Type-fairy);
     color: var(--clr-black);
 }
-
-
-
-
-
-
-
+.topTen{
+    background-color: var(--Type-topTen);
+    color: var(--clr-black);
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.divTop10{
+    width: 100%;
+    background-color: transparent;
+}
+#top10{
+    opacity: 0;
+}
