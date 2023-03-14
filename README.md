@@ -82,11 +82,14 @@ Yo como usuario nuevo, quiero poder ver la lista de todos los pokemones para con
 * Que sea responsive.
 
 * Dos usuarios nos dieron el feedback
--Prototipo de baja fidelidad:
-- Investigar como exportar la data de pokemon
-- (Ordenar) Se ve la lista de pokemones en una tabla de cuatro filas.
--Diseño en CSS: fondo, colores, etc.
--Que sea responsive.
+
+#### `Tareas:`
+
+* [ ] Prototipo de baja fidelidad:
+* [ ] Investigar como exportar la data de pokemon
+* [ ] (Ordenar) Se ve la lista de pokemones en una tabla de cuatro filas.
+* [ ] Diseño en CSS: fondo, colores, etc.
+* [ ] Que sea responsive.
 
 ## Historia de usuario 2:
 
