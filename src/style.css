@@ -29,16 +29,14 @@ main{
     width: 100%;
     display: flexbox;
     box-sizing: border-box;
-    /* text-align: center; */
+    text-align: center; 
     padding: 15px;
 }
-.imagenPokemones {
-    /* imagen logo */
+.imagenPokemones { /* imagenes tarjetas pokemones*/
     padding-inline: 1rem;
     display: flexbox;
-    width: 100%;
-    max-width: 10rem;
     align-items: center;
+    overflow: auto;
 }
 :root {
     --clr-black: #1C1C1C;
@@ -87,7 +85,7 @@ main{
     transform: scale(1.1);
     box-shadow: 0 0 2rem rgba(black, 0, 0, .25);
 }
-#dataHtml { /* da estructura a la página HTML */
+#dataHtml {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,8 +93,10 @@ main{
     background: -webkit-linear-gradient(to right, #87CEFA, #90EE90);
     background: linear-gradient(to right, #DA70D6, #FFFF00);
     flex-wrap: wrap;
-    width: 100%;
+
+    overflow: hidden;
 }
+
 .selectOrdenar { /* Diseño para el botón seleccionar A-Z y Z-A */
     background: #2F3640;
     border-radius: 8px;
@@ -116,6 +116,8 @@ div { /* div tarjeta de fondo del pokemon */
     padding-block: 1rem;
     text-transform: uppercase;
     margin: 15px;
+    max-width: 100%;
+    height: auto;
 }
 h1 { /* texto dentro de la tarjeta pokemon */
     transform: translateY(-50%);
