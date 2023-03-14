@@ -175,5 +175,5 @@ jkjfkjfkjgjg
 
   ### Prototipo de alta fidelidad:
   
-[![Captura.png](https://i.postimg.cc/rwSs7yrK/Captura.png)](https://postimg.cc/CRxwqgJg)
+[![Whats-App-Image-2023-03-13-at-5-46-00-PM.jpg](https://i.postimg.cc/m2NdmCgq/Whats-App-Image-2023-03-13-at-5-46-00-PM.jpg)](https://postimg.cc/rKsCmdWC)
 
