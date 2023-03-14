@@ -144,8 +144,6 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 
 * Debe pasar los test unitarios al 100%
 
-*Readme redactado y terminado.
-
 #### `Tareas:`
 
 * [ ] Crear un cálculo que nos permita mostrar los 10 mejores pokemones en fuerza.
