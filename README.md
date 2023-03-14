@@ -164,20 +164,18 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 
 ## 8. Diseño de interfaz del usuario
 
-### Primeros pasos
+### Prototipo de baja fidelidad:
+<img src="https://user-images.githubusercontent.com/99364311/214476067-d093f1d2-8bcd-4e7a-a9b0-30b787203bd3.png" alt="Logo" width="220px">
+<br/>
+ <br/>
+ <br/>
+ <b>Autora</b>
+<br/>
+Yesenia- Peche Vergaray y Genesis Voiser / https://github.com/LizetPV
+<p align="center">
+       </summary>
+<br/>
 
-Antes de empezar a escribir código, debes definir qué deberá hacer el producto
-en base al conocimiento que puedas obtener de tu usuario. Estas preguntas te
-pueden ayudar:
+  ### Prototipo de alta fidelidad:
 
-* ¿Quiénes son los principales usuarios de producto?
-* ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
-* ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
-* ¿Cuándo utilizan o utilizarían el producto?
-* Toda tu investigación previa debe tener como resultado todas las Historias
-  de Usuario de tu proyecto.
-* No hagas los prototipos de alta fidelidad de todas tus Historias. Comienza
-  solamente por los que se necesiten para tu Sprint 1 (semana 1 de trabajo). Más
-  pistas en la guía de organización para el proyecto.
 
-## 8. Prototipo de baja y alta fidelidad:
