@@ -174,5 +174,4 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 
   ### Prototipo de alta fidelidad:
   
-(https://i.postimg.cc/m2NdmCgq/Whats-App-Image-2023-03-13-at-5-46-00-PM.jpg)](https://postimg.cc/rKsCmdWC)
-
+[![Captura.png](https://i.postimg.cc/d01kbPmd/Captura.png)](https://postimg.cc/JsfzXFF4)
