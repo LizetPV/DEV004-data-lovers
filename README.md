@@ -120,6 +120,8 @@ Yo como usuario nuevo, quiero poder visualizar la lista de pokemones, asi como t
 
 * Que este desplegado en git hub.
 
+#### `Tareas:`
+
 * [ ] Crear función que permita ordenar los nombres de los pokemones desde la A-Z y desde la Z-A.
 * [ ] Ordenar el código, mejorar estilos de la página.
 * [ ]  Escribir una prueba unitaria para la función filtro y ordenamiento.
@@ -143,6 +145,8 @@ Yo como usuario al navegar la pagina debe permitirnos mostrarnos los 10 pokemone
 * Debe pasar los test unitarios al 100%
 
 *Readme redactado y terminado.
+
+#### `Tareas:`
 
 * [ ] Crear un cálculo que nos permita mostrar los 10 mejores pokemones en fuerza.
 * [ ] Hacer un calculo utilizando un bucle que recorra todo el array y/o objeto.
