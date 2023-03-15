@@ -5,7 +5,7 @@
  <br/>
  <b>Autora</b>
 <br/>
-Yesenia Peche Vergaray y Genesis Voisier / https://github.com/LizetPV
+Yesenia Peche Vergaray y Genesis Voisier Sánchez. / https://github.com/LizetPV
 <p align="center">
        </summary>
 <br/>
